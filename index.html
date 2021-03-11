@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/2661ac8955.js" crossorigin="anonymous"></script>
+  <link href="css/base_styles.css" rel="stylesheet">
+  <link href="css/homepage.css" rel="stylesheet">
+</head>
+<body class="home">
+  <!-- EMERGENCY BANNER -->
+  <div id="emergency__banner">
+    <button id="emergency__close" aria-label="Close" data-to-toggle="emergency__banner"><i class="fas fa-times"></i></button>
+    <p id="emergency__message">Access to ________ ____ _______ is limited due to the current Public Health Emergency caused by COVID-19. This messaging will be updated as the situation&nbsp;develops.</p>
+  </div><!-- /.emergency -->
+  <!-- /EMERGENCY BANNER -->
+  
+  <!-- HEADER -->
+  <header class="header">
+    <h1 class="header__h1"><a href="/" rel="home">New Jersey Legislature</a></h1>
+  </header>
+  <!-- /HEADER -->
+
+  <!-- MAIN NAV -->
+  <nav class="nav">
+    <div class="mainNav__mobileToggleButtonSpace">
+      <button id="mainNav__mobileToggleButton" data-to-toggle="mainNav">
+        <i class="fas fa-bars fa-lg"></i>
+        <i class="fas fa-times fa-lg"></i>
+      </button>
+    </div><!-- /.mainNav__mobileToggleButtonSpace -->
+
+    <ul id="mainNav">
+      <li class="mainNav__links">
+        <h3 class="mainNav__linksHeader">
+          <button class="mainNav__toggler" aria-label="Main Nav Link Dropdown" data-to-toggle="mainNavCluster1">The Legislature <i class="fas fa-caret-right"></i></button>
+        </h3>
+        
+        <ul id="mainNavCluster1" class="mainNav__dropdownLinks">
+          <li class="mainNav__link">
+            <a  href="/">District Map</a>
+          </li>
+  
+          <li class="mainNav__link">
+            <a  href="/">Our Legislature</a>
+          </li>
+  
+          <li class="mainNav__link">
+            <a  href="/">Legislative Process</a>
+          </li>
+  
+          <li class="mainNav__link">
+            <a  href="/">Historical Info</a>
+          </li>
+  
+          <li class="mainNav__link">
+            <a  href="/">Public Info Assistance</a>
+          </li>
+
+          <li class="mainNav__link">
+            <a  href="/">Public Use & Displays</a>
+          </li>
+  
+          <li class="mainNav__link">
+            <a  href="/">Downloads</a>
+          </li>
+
+          <li class="mainNav__link">
+            <a  href="/">Welcome to the State House</a>
+          </li>
+  
+          <li class="mainNav__link">
+            <a  href="/">Información en Español</a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="mainNav__links">
+        <h3 class="mainNav__linksHeader">
+          <button class="mainNav__toggler" aria-label="Main Nav Link Dropdown" data-to-toggle="mainNavCluster2">Members <i class="fas fa-caret-right"></i></button>
+        </h3>
+        
+        <ul id="mainNavCluster2" class="mainNav__dropdownLinks">
+          <li class="mainNav__link">
+            <a  href="/">Find your Legislator</a>
+          </li>
+  
+          <li class="mainNav__link">
+            <a  href="/">Legislative Leadership</a>
+          </li>
+  
+          <li class="mainNav__link">
+            <a  href="/">Legislative Roster</a>
+          </li>
+  
+          <li class="mainNav__link">
+            <a  href="/">Seating Charts</a>
+          </li>
+  
+          <li class="mainNav__link">
+            <a  href="/">Bios</a>
+          </li>
+
+          <li class="mainNav__link">
+            <a  href="/">Districts by Number</a>
+          </li>
+
+          <li class="mainNav__link">
+            <a  href="/">Municipalities Index</a>
+          </li>
+
+          <li class="mainNav__link">
+            <a  href="/">Contact Your Member</a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="mainNav__links">
+        <h3 class="mainNav__linksHeader">
+          <button class="mainNav__toggler" aria-label="Main Nav Link Dropdown" data-to-toggle="mainNavCluster3">Legislative Process <i class="fas fa-caret-right"></i></button>
+        </h3>
+        
+        <ul id="mainNavCluster3" class="mainNav__dropdownLinks">
+          <li class="mainNav__link">
+            <a  href="/">Senate Committees</a>
+          </li>
+  
+          <li class="mainNav__link">
+            <a  href="/">Committee Aides</a>
+          </li>
+  
+          <li class="mainNav__link">
+            <a  href="/">Assembly Committees</a>
+          </li>
+  
+          <li class="mainNav__link">
+            <a  href="/">Committee Aides</a>
+          </li>
+  
+          <li class="mainNav__link">
+            <a  href="/">Joint Committees</a>
+          </li>
+
+          <li class="mainNav__link">
+            <a  href="/">Committee Aides</a>
+          </li>
+  
+          <li class="mainNav__link">
+            <a  href="/">Committee Groups</a>
+          </li>
+  
+          <li class="mainNav__link">
+            <a  href="/">Legislative Commissions</a>
+          </li>
+  
+          <li class="mainNav__link">
+            <a  href="/">Senate Nominations</a>
+          </li>
+
+          <li class="mainNav__link">
+            <a  href="/">Senate Rules</a>
+          </li>
+  
+          <li class="mainNav__link">
+            <a  href="/">General Assembly Rules</a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="mainNav__links">
+        <h3 class="mainNav__linksHeader">
+          <button class="mainNav__toggler" aria-label="Main Nav Link Dropdown" data-to-toggle="mainNavCluster4">Bills <i class="fas fa-caret-right"></i></button>
+        </h3>
+        
+        <ul id="mainNavCluster4" class="mainNav__dropdownLinks">
+          <li class="mainNav__link">
+            <a  href="/">Bills 2020-2021</a>
+          </li>
+  
+          <li class="mainNav__link">
+            <a  href="/">Priors Sessions</a>
+          </li>
+  
+          <li class="mainNav__link">
+            <a  href="/">Bills Subscription Service</a>
+          </li>
+  
+          <li class="mainNav__link">
+            <a  href="/">Statutes</a>
+          </li>
+  
+          <li class="mainNav__link">
+            <a  href="/">Chapter Laws</a>
+          </li>
+
+          <li class="mainNav__link">
+            <a  href="/">Constitution</a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="mainNav__links">
+        <h3 class="mainNav__linksHeader">
+          <button class="mainNav__toggler" aria-label="Main Nav Link Dropdown" data-to-toggle="mainNavCluster5">Publications <i class="fas fa-caret-right"></i></button>
+        </h3>
+        
+        <ul id="mainNavCluster5" class="mainNav__dropdownLinks">
+          <li class="mainNav__link">
+            <a  href="/">Legislative Calendar</a>
+          </li>
+  
+          <li class="mainNav__link">
+            <a  href="/">Legislative Digest</a>
+          </li>
+  
+          <li class="mainNav__link">
+            <a  href="/">Legislative LDOA</a>
+          </li>
+  
+          <li class="mainNav__link">
+            <a  href="/">Budget & Finance</a>
+          </li>
+  
+          <li class="mainNav__link">
+            <a  href="/">Audit Reports</a>
+          </li>
+
+          <li class="mainNav__link">
+            <a  href="/">Legislative Reports</a>
+          </li>
+  
+          <li class="mainNav__link">
+            <a  href="/">Public Hearing Transcripts</a>
+          </li>
+  
+          <li class="mainNav__link">
+            <a  href="/">Property Tax Reform</a>
+          </li>
+  
+          <li class="mainNav__link">
+            <a  href="/">Glossary</a>
+          </li>
+  
+          <li class="mainNav__link">
+            <a  href="/">Summary of Enactments</a>
+          </li>
+
+          <li class="mainNav__link">
+            <a  href="/">Public Info Assistance</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+  <!-- MAIN NAV -->
+  
+  <!-- MAIN CONTENT -->
+  <main class="homeMain main">
+    <section class="homeWelcome njContainer">
+      <h2 class="njPageTitle">Welcome</h2>
+    
+      <div class="star__divider">
+        <hr class="star__dividerLine star__dividerLine--left">
+        <i class="fas fa-star"></i>
+        <hr class="star__dividerLine star__dividerLine--right">
+      </div>
+    
+      <p class="njText">Welcome to the website of the New Jersey Legislature.<br />
+        The principal function of the Legislature is to enact laws for the State of New Jersey.<br />
+        Here you will find information about:</p>
+
+      <ul class="njList">
+        <li class="njListItem"><i class="fas fa-balance-scale"></i> The Legislative Process</li>
+        <li class="njListItem"><i class="fas fa-scroll"></i> Bills & Other Matters Before the Legislature</li>
+        <li class="njListItem"><i class="fas fa-file-invoice-dollar"></i> The State Budget</li>
+        <li class="njListItem"><i class="fas fa-id-card"></i> Legislators & How to Contact Them</li>
+        <li class="njListItem"><i class="fas fa-feather-alt"></i> Legislative Publications</li>
+        <li class="njListItem"><i class="fas fa-landmark"></i> The Historic NJ State House</li>
+        <li class="njListItem"><i class="fas fa-info-circle"></i> & Much More</li>
+      </ul>
+    </section>
+
+    <section class="homeCalendar">
+      <h2 class="homeCalendar__title">Legislative Schedule</h2>
+      <p class="homeCalendar__text">For changes in Legislative Schedule due to<br />snow or other emergencies, call <a href="tel:800-792-8630">800-792-8630</a> (toll-free in NJ) or <a href="tel:609-847-3905">609-847-3905</a></p>
+
+      <iframe id="homeCalendar__cal" src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23cda052&amp;ctz=America%2FNew_York&amp;src=aXR1bWdyQGdtYWlsLmNvbQ&amp;src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%23039BE5&amp;color=%2333B679&amp;color=%230B8043&amp;showTitle=0&amp;showPrint=1&amp;showTabs=1&amp;showCalendars=1&amp;showTz=1&amp;title=Legislative%20Schedule" style="border-width:0" frameborder="0" scrolling="no"></iframe>
+
+      <p class="homeCalendar__text">Please check this page frequently as schedules may change.</p>
+    </section>
+
+    <section class="homeBillSearch">
+      <div class="homeBillSearch__box">
+        <div class="homeBillSearch__top">
+          <h2 class="homeBillSearch__title">Bill Search</h2>
+        </div>
+    
+        <div class="homeBillSearch__body">
+          <form method="post" id="SearchBills" class="homeBillSearch__form" name="SearchBills" action="bills/homeBillSearchResult.asp" onSubmit="SearchBills_onsubmit()"> 
+            <fieldset class="homeBillSearch__fieldset">
+              <legend class="homeBillSearch__legend">Search for NJ State Legislative Session Bills by:</legend>
+    
+              <label class="homeBillSearch__label"><strong>Bill Type:</strong>
+                <SELECT id="BillType" class="homeBillSearch__select" name="BillType" onchange="BillType_onchange()" value>
+                  <OPTION value=""></OPTION>
+                  <OPTION value="S">S</OPTION>
+                  <OPTION value="A">A</OPTION>
+                  <OPTION value="SJR">SJR</OPTION>
+                  <OPTION value="AJR">AJR</OPTION>
+                  <OPTION value="SCR">SCR</OPTION>
+                  <OPTION value="ACR">ACR</OPTION>
+                  <OPTION value="SR">SR</OPTION>
+                  <OPTION value="AR">AR</OPTION>
+                </SELECT>
+              </label>
+    
+              <label class="homeBillSearch__label"><strong>Bill Number(s):</strong>
+                <% if Session("Browser")="IE" then%> 
+                  <input name="BillNumber" ID="BillNumber" class="homeBillSearch__input" onKeyPress="BillNumber_onchange()" value onkeyup="return BillNumber_onkeyup()" maxlength=4>
+                <%else%> 
+                  <input name="BillNumber" ID="BillNumber" class="homeBillSearch__input" onChange="BillNumber_onchange()" value onkeyup="return BillNumber_onkeyup()" maxlength=4>
+                <%end if%>
+                <span class="homeBillSearch__labelExtra">(ex - a specific bill number: S196, A642 Or all of a specific type: S, A, SJR, AJR, SCR, ACR, SR, AR)</span>
+              </label> 
+    
+              <label class="homeBillSearch__label"><strong>Legislative Session:</strong>
+                <select name="DBNAME" ID="DBNAME" class="homeBillSearch__select" onChange="DBNAME_onchange(this)">
+                  <%if Session("DB_NAME")="LIS2020" Then%> 
+                    <option value="LIS2020" selected value>2020-2021</option> 
+                    <option value="LIS2018">2018-2019</option> 
+                    <option value="LIS2016">2016-2017</option> 
+                    <option value="LIS2014">2014-2015</option> 
+                    <option value="LIS2012">2012-2013</option> 
+                    <option value="LIS2010">2010-2011</option> 
+                    <option value="LIS2008">2008-2009</option> 
+                    <option value="LIS2006">2006-2007</option> 
+                    <option value="LIS2004">2004-2005</option> 
+                    <option value="LIS2002">2002-2003</option> 
+                    <option value="LIS2000">2000-2001</option> 
+                    <option Value="LIS9899">1998-1999</option> 
+                    <option Value="LIS9697">1996-1997</option> 
+                  <%elseif Session("DB_NAME")="LIS2018" Then%> 
+                    <option value="LIS2020">2020-2021</option> 
+                    <option value="LIS2018" selected value>2018-2019</option> 
+                    <option value="LIS2016">2016-2017</option> 
+                    <option value="LIS2014">2014-2015</option> 
+                    <option value="LIS2012">2012-2013</option> 
+                    <option value="LIS2010">2010-2011</option> 
+                    <option value="LIS2008">2008-2009</option> 
+                    <option value="LIS2006">2006-2007</option> 
+                    <option value="LIS2004">2004-2005</option> 
+                    <option value="LIS2002">2002-2003</option> 
+                    <option value="LIS2000">2000-2001</option> 
+                    <option Value="LIS9899">1998-1999</option> 
+                    <option Value="LIS9697">1996-1997</option> 
+                  <%Elseif Session("DB_NAME")="LIS2016" Then%> 
+                    <option value="LIS2020">2020-2021</option> 
+                    <option value="LIS2018">2018-2019</option> 
+                    <option value="LIS2016" selected value>2016-2017</option> 
+                    <option value="LIS2014">2014-2015</option> 
+                    <option value="LIS2012">2012-2013</option> 
+                    <option value="LIS2010">2010-2011</option> 
+                    <option value="LIS2008">2008-2009</option> 
+                    <option value="LIS2006">2006-2007</option> 
+                    <option value="LIS2004">2004-2005</option> 
+                    <option value="LIS2002">2002-2003</option> 
+                    <option value="LIS2000">2000-2001</option> 
+                    <option Value="LIS9899">1998-1999</option> 
+                    <option Value="LIS9697">1996-1997</option> 
+                  <%elseif Session("DB_NAME")="LIS2014" Then%> 
+                    <option value="LIS2020">2020-2021</option> 
+                    <option value="LIS2018">2018-2019</option> 
+                    <option value="LIS2016">2016-2017</option> 
+                    <option value="LIS2014" selected value>2014-2015</option> 
+                    <option value="LIS2012">2012-2013</option> 
+                    <option value="LIS2010">2010-2011</option> 
+                    <option value="LIS2008">2008-2009</option> 
+                    <option value="LIS2006">2006-2007</option> 
+                    <option value="LIS2004">2004-2005</option> 
+                    <option value="LIS2002">2002-2003</option> 
+                    <option value="LIS2000">2000-2001</option> 
+                    <option Value="LIS9899">1998-1999</option> 
+                    <option Value="LIS9697">1996-1997</option> 
+                  <%elseif Session("DB_NAME")="LIS2012" Then%>
+                    <option value="LIS2020">2020-2021</option> 
+                    <option value="LIS2018">2018-2019</option> 
+                    <option value="LIS2016">2016-2017</option> 
+                    <option value="LIS2014">2014-2015</option> 
+                    <option value="LIS2012" selected value>2012-2013</option> 
+                    <option value="LIS2010">2010-2011</option> 
+                    <option value="LIS2008">2008-2009</option> 
+                    <option value="LIS2006">2006-2007</option> 
+                    <option value="LIS2004">2004-2005</option> 
+                    <option value="LIS2002">2002-2003</option> 
+                    <option value="LIS2000">2000-2001</option> 
+                    <option Value="LIS9899">1998-1999</option> 
+                    <option Value="LIS9697">1996-1997</option> 
+                  <%elseif Session("DB_NAME")="LIS2010" Then%> 
+                    <option value="LIS2020">2020-2021</option> 
+                    <option value="LIS2018">2018-2019</option> 
+                    <option value="LIS2016">2016-2017</option> 
+                    <option value="LIS2014">2014-2015</option> 
+                    <option value="LIS2012">2012-2013</option> 
+                    <option value="LIS2010" selected value>2010-2011</option> 
+                    <option value="LIS2008">2008-2009</option> 
+                    <option value="LIS2006">2006-2007</option> 
+                    <option value="LIS2004">2004-2005</option> 
+                    <option value="LIS2002">2002-2003</option> 
+                    <option value="LIS2000">2000-2001</option> 
+                    <option Value="LIS9899">1998-1999</option> 
+                    <option Value="LIS9697">1996-1997</option> 
+                  <%elseif Session("DB_NAME")="LIS2008" Then%>
+                    <option value="LIS2020">2020-2021</option> 
+                    <option value="LIS2018">2018-2019</option> 
+                    <option value="LIS2016">2016-2017</option> 
+                    <option value="LIS2014">2014-2015</option>  
+                    <option value="LIS2012">2012-2013</option> 
+                    <option value="LIS2010">2010-2011</option> 
+                    <option value="LIS2008" selected value>2008-2009</option>
+                    <option value="LIS2006">2006-2007</option> 
+                    <option value="LIS2004">2004-2005</option> 
+                    <option value="LIS2002">2002-2003</option> 
+                    <option value="LIS2000">2000-2001</option> 
+                    <option Value="LIS9899">1998-1999</option> 
+                    <option Value="LIS9697">1996-1997</option> 
+                  <%elseif Session("DB_NAME")="LIS2006" Then%>
+                    <option value="LIS2020">2020-2021</option> 
+                    <option value="LIS2018">2018-2019</option> 
+                    <option value="LIS2016">2016-2017</option> 
+                    <option value="LIS2014">2014-2015</option> 
+                    <option value="LIS2012">2012-2013</option> 
+                    <option value="LIS2010">2010-2011</option> 
+                    <option value="LIS2008">2008-2009</option>
+                    <option value="LIS2006" selected value>2006-2007</option> 
+                    <option value="LIS2004">2004-2005</option> 
+                    <option value="LIS2002">2002-2003</option> 
+                    <option value="LIS2000">2000-2001</option> 
+                    <option Value="LIS9899">1998-1999</option> 
+                    <option Value="LIS9697">1996-1997</option> 
+                  <%elseif Session("DB_NAME")="LIS2004" Then%>
+                    <option value="LIS2020">2020-2021</option> 
+                    <option value="LIS2018">2018-2019</option> 
+                    <option value="LIS2016">2016-2017</option> 
+                    <option value="LIS2014">2014-2015</option>  
+                    <option value="LIS2012">2012-2013</option> 
+                    <option value="LIS2010">2010-2011</option> 
+                    <option value="LIS2008">2008-2009</option>
+                    <option value="LIS2006">2006-2007</option> 
+                    <option selected value="LIS2004">2004-2005</option> 
+                    <option value="LIS2002">2002-2003</option> 
+                    <option value="LIS2000">2000-2001</option> 
+                    <option Value="LIS9899">1998-1999</option> 
+                    <option Value="LIS9697">1996-1997</option> 
+                  <%elseif Session("DB_NAME")="LIS2002" Then%>
+                    <option value="LIS2020">2020-2021</option> 
+                    <option value="LIS2018">2018-2019</option> 
+                    <option value="LIS2016">2016-2017</option> 
+                    <option value="LIS2014">2014-2015</option> 
+                    <option value="LIS2012">2012-2013</option> 
+                    <option value="LIS2010">2010-2011</option> 
+                    <option value="LIS2008">2008-2009</option>
+                    <option value="LIS2006">2006-2007</option> 
+                    <option value="LIS2004">2004-2005</option> 
+                    <option selected value="LIS2002">2002-2003</option> 
+                    <option value="LIS2000">2000-2001</option> 
+                    <option Value="LIS9899">1998-1999</option> 
+                    <option Value="LIS9697">1996-1997</option> 
+                  <%elseif Session("DB_NAME")="LIS9899" then %>
+                    <option value="LIS2020">2020-2021</option> 
+                    <option value="LIS2018">2018-2019</option> 
+                    <option value="LIS2016">2016-2017</option> 
+                    <option value="LIS2014">2014-2015</option> 
+                    <option value="LIS2012">2012-2013</option> 
+                    <option value="LIS2010">2010-2011</option> 
+                    <option value="LIS2008">2008-2009</option>
+                    <option value="LIS2006">2006-2007</option> 
+                    <option value="LIS2004">2004-2005</option> 
+                    <option value="LIS2002">2002-2003</option> 
+                    <option value="LIS2000">2000-2001</option> 
+                    <option selected Value="LIS9899">1998-1999</option> 
+                    <option Value="LIS9697">1996-1997</option> 
+                  <%elseif Session("DB_NAME")="LIS9697" then %>
+                    <option value="LIS2020">2020-2021</option> 
+                    <option value="LIS2018">2018-2019</option> 
+                    <option value="LIS2016">2016-2017</option> 
+                    <option value="LIS2014">2014-2015</option> 
+                    <option value="LIS2012">2012-2013</option> 
+                    <option value="LIS2010">2010-2011</option> 
+                    <option value="LIS2008">2008-2009</option> 
+                    <option value="LIS2006">2006-2007</option> 
+                    <option value="LIS2004">2004-2005</option> 
+                    <option value="LIS2002">2002-2003</option> 
+                    <option value="LIS2000">2000-2001</option> 
+                    <option Value="LIS9899">1998-1999</option> 
+                    <option selected Value="LIS9697">1996-1997</option> 
+                  <%elseif Session("DB_NAME")="LIS2000" then %> 
+                    <option value="LIS2018">2018-2019</option> 
+                    <option value="LIS2016">2016-2017</option> 
+                    <option value="LIS2014">2014-2015</option> 
+                    <option value="LIS2012">2012-2013</option> 
+                    <option value="LIS2010">2010-2011</option> 
+                    <option value="LIS2008">2008-2009</option>
+                    <option value="LIS2006">2006-2007</option> 
+                    <option value="LIS2004">2004-2005</option> 
+                    <option value="LIS2002">2002-2003</option> 
+                    <option selected value="LIS2000">2000-2001</option> 
+                    <option Value="LIS9899">1998-1999</option> 
+                    <option Value="LIS9697">1996-1997</option>
+                  <%end if%> 
+                </select>
+              </label>
+    
+              <label class="homeBillSearch__label"><strong>Subject:</strong> <a href="javascript:SelectSubject()">List of Bill Subject headings</a>
+                <% if Session("Browser")="IE" then%> 
+                  <input id="Subject" name="Subject" readOnly>						 
+                <%else%> 
+                  <input id="Subject" name="Subject" type="hidden"> 
+                <%end if%> 
+              </label>
+    
+              <label class="homeBillSearch__label"><strong>Sponsor:</strong>
+                <select id="Sponsor" class="homeBillSearch__select" name="Sponsor"onChange="Sponsor_onchange()"> 
+                  <option value Selected></option> <%
+                  For I=0 to ubound(Name)
+                  'if Session("SearchText")=NameID(I) then
+                  %> <option value="<%=NameID(I) & "|" & Roster_Key(I)%>"><%=Name(I)%></option> 
+                  <%'else%> <!--<OPTION value='<%=NameID(I)%>'><%=Name(I)%></OPTION>--> <%
+                  'end if
+                  next
+                  %> 
+                </select>
+              </label>
+    
+              <label class="homeBillSearch__label"><strong>Keyword:</strong>
+                <% if Session("Browser")="IE" then%> 
+                  <input name="Keyword" ID="Keyword" class="homeBillSearch__input" onKeyPress="Keyword_onkeypress()" value> 
+                </label>
+                <%else%> 
+                  <input name="Keyword" ID="Keyword" class="homeBillSearch__input" onChange="Keyword_onkeypress()" value>
+                </label> 
+                <%end if%>
+    
+              <label class="homeBillSearch__label"><strong>Last Date Of Action:</strong>
+                <select id="LDOA" name="LDOA" class="homeBillSearch__select" LANGUAGE="javascript" onChange="return LDOA_onchange()"> 
+                  <option value Selected></option>
+                  <%For I=0 to ubound(LDOA)%> 
+                    <option value="<%=LDOA(I)%>"><%=LDOA(I)%></option> 
+                  <%next%> 
+                </select>
+              </label>
+    
+              <label class="homeBillSearch__label"><strong>Governor's Action:</strong>
+                <select id="GovernorAction" class="homeBillSearch__select" name="GovernorAction" onChange="GovernorAction_onchange()"> 
+                  <option value Selected></option>
+                  <option value="APP">Approved</option>
+                  <option value="AV">Absolute Veto</option> 
+                  <option value="CV">Conditional Veto</option> 
+                  <option value="LIV">Line Item Veto</option> 
+                  <option value="PV">Pocket Veto</option> 
+                  <option value="WOA">Without Approval</option> 
+                </select> 
+              </label>
+    
+              <input type="hidden" name="GoToAdvancedSearch" id="GoToAdvancedSearch" value="">
+              <input type="hidden" name="DefaultSearch" id="DefaultSearch">
+              <input type="hidden" name="Browser" id="Browser" value="<%=Session("Browser")%>">
+              <input type="hidden" name="SubjectCriteria" id="SubjectCriteria" value>
+    
+              <div class="homeBillSearch__buttons">
+                <input type="submit" id="Search" class="homeBillSearch__button" name="Search" value="Search">
+                <input type="button" id="reset" class="homeBillSearch__button" name="reset" value="Reset" onClick="reset_onclick()">
+                <input type="button" id="AdvancedSearch" class="homeBillSearch__button" name="AdvancedSearch" value="Advanced Search" onclick="AdvancedSearch_onclick()">
+              </div>
+            </fieldset>
+          </form>
+    
+          <p>Session schedules</p>
+          <a href="javascript:SessionSchedule('S')"> Senate Sessions </a>
+          <a href="javascript:SessionSchedule('A')"> Assembly Sessions </a>
+          <a class="b" href="https://www.njleg.state.nj.us/legislativepub/visiting_hosting.asp">Public Use and Displays</a>
+          <p>The public can stage displays and small events at the capitol</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="homeLiveProceedings">
+      <a class="homeLiveProceedings__graphic" href="media/live_audio.asp?SESSION=2020">
+        <div class="homeLiveProceedings__linkLeft">
+          <p class="homeLiveProceedings__linkLeftTop">NJ now</p>
+          <hr class="homeLiveProceedings__divider" />
+          <p class="homeLiveProceedings__linkLeftBottom">in session</p>
+        </div>
+
+        <div class="homeLiveProceedings__linkRight">
+          <img class="homeLiveProceedings__linkRightIMG" src="imgs/nj_now_inSession_dome.png" />
+        </div>
+      </a>
+
+      <p class="homeLiveProceedings__text">Watch live proceedings <a href="media/live_audio.asp?SESSION=2020">here <i class="fas fa-caret-right"></i></a></p>
+    </section>
+
+    <section class="homeFindLegislator">
+      <div class="homeFindLegislator__left">
+        <img class="homeFindLegislator__leftIMG" src="imgs/findLegislator.jpg" />
+      </div>
+
+      <div class="homeFindLegislator__right">
+        <h3 class="homeFindLegislator__title">Find Your Legislator</h3>
+        <ul class="homeFindLegislator__list">
+          <li>Unsure who your current legislator is?</li>
+          <li>Need to contact your legislator?</li>
+          <li>Need to find legislators of other districts?</li>
+        </ul>
+        <p class="homeFindLegislator__text"><a href="/members/legsearch.asp">Here's how <i class="fas fa-caret-right"></i></a></p>
+      </div>
+    </section>
+  </main>
+  <!-- /MAIN CONTENT -->
+  
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__top">
+      <a  href="http://www.nj.gov/">Executive Branch</a>
+      
+      <span class="footer__linkDivider">|</span>
+      
+      <a  href="http://www.judiciary.state.nj.us/">Judicial Branch</a>
+      
+      <span class="footer__linkDivider">|</span>
+      
+      <a  href="https://www.njleg.state.nj.us/legislativepub/links.asp">Other Gov't Sites</a>
+      
+      <div class="footer__divider">
+        <hr class="footer__dividerLine footer__dividerLine--left">
+        
+        <i class="fas fa-star"></i>
+        
+        <hr class="footer__dividerLine footer__dividerLine--right">
+      </div>
+    </div><!-- /.footer__top -->
+    
+    <div class="footer__mid">
+      <div class="footer__sections">
+        <h3 class="footer__linksHeader">
+          <button class="footer__toggler" aria-label="Mobile Link Cluster Toggler" data-to-toggle="footerLinkCluster1">CLE for Legislative Attorneys <span class="footer__mobileIndicator">+</span></button>
+        </h3>
+        
+        <ul id="footerLinkCluster1" class="footer__links">
+          <li class="footer__link">
+            <a  href="/">CLE Registration Form</a>
+          </li>
+  
+          <li class="footer__link">
+            <a  href="/">Certification for CLE Ethics Credit</a>
+          </li>
+  
+          <li class="footer__link">
+            <a  href="/">CLE Presentation Schedule</a>
+          </li>
+        </ul>
+
+        <h3 class="footer__linksHeader">
+          <button class="footer__toggler" aria-label="Mobile Link Cluster Toggler" data-to-toggle="footerLinkCluster2">General Info <span class="footer__mobileIndicator">+</span></button>
+        </h3>
+        
+        <ul id="footerLinkCluster2" class="footer__links">
+          <li class="footer__link">
+            <a  href="/">Site Map</a>
+          </li>
+  
+          <li class="footer__link">
+            <a  href="/">FAQ</a>
+          </li>
+
+          <li class="footer__link">
+            <a  href="/">Help</a>
+          </li>
+  
+          <li class="footer__link">
+            <a  href="/">Contact Us</a>
+          </li>
+        </ul>
+      </div><!-- /.footer__sections -->
+  
+      <div class="footer__sections">
+        <h3 class="footer__linksHeader">
+          <button class="footer__toggler" aria-label="Mobile Link Cluster Toggler" data-to-toggle="footerLinkCluster3">Ethics <span class="footer__mobileIndicator">+</span></button>
+        </h3>
+        
+        <ul id="footerLinkCluster3" class="footer__links">
+          <li class="footer__link">
+            <a  href="/">Anti-Discrimination & Anti-Harassment Policy</a>
+          </li>
+
+          <li class="footer__link">
+            <a  href="/">Conflicts of Interest Law</a>
+          </li>
+  
+          <li class="footer__link">
+            <a  href="/">Code Of Ethics</a>
+          </li>
+  
+          <li class="footer__link">
+            <a  href="/">Financial Disclosure</a>
+          </li>
+  
+          <li class="footer__link">
+            <a  href="/">Termination or Assumption of Public Employment Form</a>
+          </li>
+  
+          <li class="footer__link">
+            <a  href="/">Formal Advisory Opinions</a>
+          </li>
+
+          <li class="footer__link">
+            <a  href="/">Contract Awards</a>
+          </li>
+  
+          <li class="footer__link">
+            <a  href="/">Joint Rule 19</a>
+          </li>
+  
+          <li class="footer__link">
+            <a  href="/">Ethics Tutorial</a>
+          </li>
+        </ul>
+      </div><!-- /.footer__sections -->
+      
+      <div class="footer__sections">
+        <h3 class="footer__linksHeader">
+          <button class="footer__toggler" aria-label="Mobile Link Cluster Toggler" data-to-toggle="footerLinkCluster4">Staff Offices <span class="footer__mobileIndicator">+</span></button>
+        </h3>
+        
+        <ul id="footerLinkCluster4" class="footer__links">
+          <li class="footer__link">
+            <a  href="/">Senate Democratic Office</a>
+          </li>
+  
+          <li class="footer__link">
+            <a  href="/">Senate Republican Office</a>
+          </li>
+  
+          <li class="footer__link">
+            <a  href="/">Assembly Democratic Office</a>
+          </li>
+  
+          <li class="footer__link">
+            <a  href="/">Assembly Republican Office</a>
+          </li>
+  
+          <li class="footer__link">
+            <a  href="/">Office of Legislative Services</a>
+          </li>
+        </ul>
+      </div><!-- /.footer__sections -->
+      
+      <div class="footer__divider footer__divider--mobile">
+        <hr class="footer__dividerLine footer__dividerLine--left">
+        
+        <i class="fas fa-star"></i>
+        
+        <hr class="footer__dividerLine footer__dividerLine--right">
+      </div>
+
+      <div class="footer__sections">
+        <div class="footer__contact">
+          <h4 class="footer__contact--title">Contact Us</h4>
+          <address>
+            The Office of Legislative Services<br />
+            Office of Public Information<br />
+            Room 50<br />
+            State House Annex<br />
+            P.O. Box 068<br />
+            Trenton, NJ 08625-0068
+          </address>
+          
+          <p class="footer__phone">
+            <i class="fas fa-phone-alt"></i>
+            <a href="tel:+1-800-792-8630">800-792-8630</a>
+          </p>
+          
+          <p class="footer__email">
+            <i class="far fa-envelope"></i>
+            <a href="mailto:leginfo@njleg.org">leginfo@njleg.org</a>
+          </p>
+        </div><!-- /.footer__contact -->
+        
+        <div class="footer__social">
+          <h4 class="stayConnected">Stay Connected</h4>
+          <a href="/"><i class="fab fa-facebook-f fa-2x"></i></a>
+          <a href="http://twitter.com/OLS_LegInfo"><i class="fab fa-twitter fa-2x"></i></a>
+          <a href="/"><i class="fab fa-instagram fa-2x"></i></a>
+        </div><!-- /.footer__social -->
+
+        <div class="footer__news">
+          <label for="newsSelect" class="newsSelect__label">News around NJ</label>
+
+          <select name="newsSelect" id="newsSelect">
+            <option selected="">Select a Newspaper</option>
+            <option value="http://www.app.com/">Asbury Park Press</option>
+            <option value="http://www.pressofatlanticcity.com">Atlantic City Press</option>
+            <option value="http://www.northjersey.com/">The Record</option>
+            <option value="http://www.phillyburbs.com/burlingtoncountytimes/">Burlington County Times</option>
+            <option value="http://www.c-n.com">Courier News</option>
+            <option value="http://www.courierpostonline.com">Courier Post</option>
+            <option value="http://www.dailyrecord.com">Daily Record</option>
+            <option value="http://www.lehighvalleylive.com ">Express Times</option>
+            <option value="http://www.thnt.com/">Home News &amp; Tribune</option>
+            <option value="http://www.njbiz.com">NJBIZ</option>
+            <option value="http://www.njherald.com">New Jersey Herald</option>
+            <option value="http://www.nytimes.com">New York Times</option>
+            <option value="http://www.philly.com/mld/inquirer">Philadelphia Inquirer</option>
+            <option value="http://www.nj.com/starledger/">Star Ledger</option>
+            <option value="http://www.nj.com/times/">Trenton Times</option>
+            <option value="http://www.trentonian.com">Trentonian</option>
+            <option value="http://www.roi-nj.com/">ROI-NJ</option>
+            <option value="https://njbmagazine.com/">New Jersey Business</option>
+            <option value="https://www.nj.com/jjournal/">Jersey Journal</option>
+          </select>
+
+          <button id="newsSelectButton">Go</button>
+        </div><!-- /.footer__news -->
+      </div><!-- /.footer__sections -->
+    </div><!-- /.footer__mid -->
+      
+    <div class="footer__bottom">
+      <div class="footer__securityIcons">
+        <!-- Space for images / icons / logos supporting security / compliance -->
+        <i class="fas fa-user-secret fa-3x"></i>
+        
+        <i class="fas fa-shield-alt fa-3x"></i>
+        
+        <i class="fas fa-user-lock fa-flip-horizontal fa-3x"></i>
+      </div><!-- /.footer__icons -->
+      
+      <p class="footer__disclaimer">
+        <a  href="https://www.njleg.state.nj.us/legislativepub/disclaimer.asp">Disclaimer &#8226; Privacy Policy</a>
+      </p>
+      
+      <p class="footer__copyright">&#169;2021 New Jersey Office of Legislative Services<br />
+        All rights reserved.</p>
+      
+      <p class="builtBy">- Site Design & Build by <a href="https://codepen.io/DamienL"><em>Damien Lucchese</em> </a> -</p>
+    </div><!-- /.footer__bottom -->
+  </footer>
+  <!-- /FOOTER -->
+
+  <script src="js/base_script.js"></script>
+</body>
+</html>
