@@ -1,0 +1,17 @@
+.codeOfEthics__article {
+  margin-top: 50px;
+}
+
+.codeOfEthics__subtitle {
+  background: #003b5c;
+  border-radius: 20px 20px 0px 0px;
+  box-sizing: border-box;
+  color: #fff;
+  padding: 16px 20px 16px 20px;
+}
+
+.codeOfEthics__text {
+  color: #003b5c;
+  font-size: 18px;
+  text-indent: 30px;
+}

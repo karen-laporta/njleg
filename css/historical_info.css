@@ -1,0 +1,12 @@
+.historicalInfo__subtitle {
+  color: #003b5c;
+  font-weight: bold;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.historicalInfo__text {
+  color: #003b5c;
+  font-size: 18px;
+  text-indent: 30px;
+}

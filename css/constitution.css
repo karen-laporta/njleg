@@ -1,0 +1,49 @@
+.constitution__subtitle {
+  color: #003b5c;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 40px auto 0 auto;
+  max-width: 1050px;
+  text-align: center;
+}
+
+.constitution__subtitle--bar {
+  background: #003b5c;
+  border-radius: 20px 20px 0px 0px;
+  box-sizing: border-box;
+  color: #fff;
+  font-size: 24px;
+  margin-top: 50px;
+  padding: 16px 20px 16px 20px;
+}
+
+.constitution__text {
+  color: #003b5c;
+  font-size: 18px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  max-width: 1050px;
+}
+
+.constitution__text a {
+  color: #cda052;
+  font-weight: bold;
+}
+
+.constitution__fullText {
+  color: #003b5c;
+  font-size: 18px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 80px;
+  max-width: 1050px;
+}
+
+.constitution__fullText .constitution__subtitle {
+  margin-bottom: 20px;
+}
+
+.constitution__fullText .star__divider {
+  margin-bottom: 40px;
+}

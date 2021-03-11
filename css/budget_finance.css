@@ -1,0 +1,143 @@
+.budgetFinance__selects {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+
+
+/****** officeOfBudgFin *******/
+
+.officeOfBudgFin__box {
+  background-color: #003b5c;
+  border-radius: 20px;
+  margin: 60px auto;
+  max-width: 1050px;
+  padding-bottom: 26px;
+}
+
+.officeOfBudgFin__box--top {
+  background-color: #03102b;
+  border-bottom: 1px solid #fff;
+  border-radius: 20px 20px 0 0;
+  padding: 20px 12px 14px 12px;
+}
+
+.officeOfBudgFin__title {
+  color: #fff;
+  font-weight: bold;
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.officeOfBudgFin__box--body {
+  margin: 40px auto 20px auto;
+  max-width: 840px;
+  padding: 0 20px 0 20px;
+}
+
+.officeOfBudgFin__text {
+  color: #fff;
+  font-size: 18px;
+  font-style: italic;
+  margin-top: 20px;
+  padding-right: 20px;
+}
+
+.officeOfBudgFin__text strong {
+  color: #fff;
+  font-size: 20px;
+  font-style: normal;
+  margin-right: 20px;
+}
+
+.officeOfBudgFin__text a {
+  color: #cda052;
+  font-style: normal;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.officeOfBudgFin__indentLink {
+  margin-left: 5%;
+}
+
+.officeOfBudgFin__box--body .star__divider {
+  margin-bottom: 40px;
+  margin-top: 50px;
+}
+
+.officeOfBudgFin__bottom {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.officeOfBudgFin__imageBox {
+  width: 56%;
+}
+
+.officeOfBudgFin__image {
+  height: auto;
+  width: 100%;
+}
+
+.officeOfBudgFin__contact {
+  width: 41%;
+}
+
+.officeOfBudgFin__address {
+  color: #fff;
+  font-size: 18px;
+  width: auto;
+}
+
+.officeOfBudgFin__phone,
+.officeOfBudgFin__fax {
+  width: auto;
+}
+
+.officeOfBudgFin__phone .fa-phone-alt,
+.officeOfBudgFin__phone a,
+.officeOfBudgFin__fax .fa-fax,
+.officeOfBudgFin__fax a {
+  color: #cda052;
+}
+
+.officeOfBudgFin__phone a,
+.officeOfBudgFin__fax a {
+  text-decoration: none;
+}
+
+@media (max-width: 1200px) {
+  .budgetFinance__selects {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 991px) {
+  .officeOfBudgFin__bottom {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .officeOfBudgFin__imageBox {
+    max-width: 500px;
+    width: 100%;
+  }
+
+  .officeOfBudgFin__contact {
+    margin-top: 30px;
+    width: 300px;
+  }
+}
+
+@media (max-width: 576px) {
+  .officeOfBudgFin__contact {
+    width: 100%;
+  }
+}

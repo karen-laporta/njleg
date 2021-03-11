@@ -1,0 +1,22 @@
+.officeOfLS__list {
+  margin: 40px auto 20px auto;
+  max-width: 600px;
+}
+
+.officeOfLS__text {
+  color: #003b5c;
+  font-size: 18px;
+  font-style: italic;
+  margin-top: 20px;
+  padding-right: 20px;
+}
+
+.officeOfLS__text a {
+  color: #cda052;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.officeOfLS__indentLink {
+  margin-left: 5%;
+}

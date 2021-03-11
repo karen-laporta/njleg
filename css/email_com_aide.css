@@ -1,0 +1,206 @@
+.repEmail {
+  box-sizing: border-box;
+  margin: 0 auto 0 auto;
+  padding: 0 20px;
+  width: 100%;
+}
+
+.repEmail__title {
+  color: #003b5c;
+  font-size: 34px;
+  text-align: center;
+}
+
+.repEmail__subtitle {
+  color: #003b5c;
+  font-size: 22px;
+  text-align: center;
+   margin: 30px auto 30px auto; 
+  display: block;
+ width: 65%;
+}
+
+
+.repEmail__formSpace {
+  margin-top: 40px;
+}
+
+.repEmail__form {
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.repEmail__fieldset {
+  border: none;
+}
+
+.repEmail__fieldsetSpace {
+  border: none;
+  margin: 30px 0;
+}
+.repEmail__legend {
+  color: #003b5c;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.repEmail__label {
+  color: #cda052;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.repEmail__input {
+  border: 2px solid #cda052;
+  box-sizing: border-box;
+  height: 34px;
+  width: 300px;
+  margin-left: 25px;
+}
+
+.repEmail__inputSubj {
+  border: 2px solid #cda052;
+  box-sizing: border-box;
+  height: 34px;
+  width: 300px;
+  margin-left: 93px;
+}
+
+
+.repEmail__textarea {
+  border: 2px solid #cda052;
+  box-sizing: border-box;
+  height: 300px;
+  width: 300px; 
+  vertical-align: top;
+  margin-left: 141px;
+}
+
+.repEmail__submitButtonSpace {
+  margin: 10px 0 0 85px;
+  text-align: center;
+  width: 100%;
+}
+
+.repEmail__submitButton {
+  background-color: #cda052;
+  border: 1px solid #cda052;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  height: 34px;
+  padding-top: 2px;
+  width: 120px;
+}
+
+/***** MEDIA QUERIES *****/
+/***** MIN WIDTH *****/
+
+@media (max-width: 648px) {
+  .repEmail__submitButtonSpace{
+    margin-left: 110px;
+  }
+}
+
+
+@media (max-width: 610px) {
+  .repEmail__inputSubj{
+    margin-left: 78px;
+    width: 250px;
+  }
+  .repEmail__input {
+    margin-left: 9px;
+    width: 250px;
+  }
+  .repEmail__textarea{
+    margin-left: 126px;
+    width: 250px;
+  }
+  .repEmail__submitButton{
+    width: 90px;
+  }
+  .repEmail__submitButtonSpace{
+    margin-left: 74px;
+  }
+}
+
+@media (max-width: 555px) {
+  .repEmail__inputSubj{
+    margin-left: 78px;
+    width: 240px;
+  }
+  .repEmail__input {
+    margin-left: 10px;
+    width: 240px;
+  }
+  .repEmail__textarea{
+    margin-left: 126px;
+    width: 240px;
+  }
+  .repEmail__submitButton{
+    width: 90px;
+  }
+}
+
+@media (max-width: 535px) {
+  .repEmail__inputSubj{
+    margin-left: 74px;
+    width: 240px;
+  }
+  .repEmail__input {
+    margin-left: 6px;
+    width: 240px;
+  }
+  .repEmail__textarea{
+    margin-left: 122px;
+    width: 240px;
+  }
+  .repEmail__submitButton{
+    width: 90px;
+  }
+}
+
+@media (max-width: 528px) {
+  .repEmail__inputSubj{
+    margin-left: 72px;
+    width: 200px;
+  }
+  .repEmail__input {
+    margin-left: 4px;
+    width: 200px;
+  }
+  .repEmail__textarea{
+    margin-left: 121px;
+    width: 200px;
+  }
+  .repEmail__submitButton{
+    width: 90px;
+  }
+  .repEmail__submitButtonSpace{
+    margin-left: 86px;
+  }
+}
+
+@media (max-width: 500px) {
+  .repEmail__inputSubj{
+    margin-left: 72px;
+    width: 200px;
+  }
+  .repEmail__input {
+    margin-left: 4px;
+    width: 200px;
+  }
+  .repEmail__textarea{
+    margin-left: 121px;
+    width: 200px;
+  }
+  .repEmail__submitButton{
+    width: 90px;
+  }
+  .repEmail__submitButtonSpace{
+    margin-left: 98px;
+  }
+
+}

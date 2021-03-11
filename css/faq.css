@@ -1,0 +1,268 @@
+.faqs {
+  margin: 80px auto 80px auto;
+  padding: 0 20px;
+  width: 75%;
+}
+
+.faq__title {
+  color: #003b5c;
+  font-size: 34px;
+  text-align: center;
+}
+
+.faq__list {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.faq__row {
+  background-color: #003b5c;
+  border-bottom: 1px solid #fff;
+  /*padding: 20px 20px 0 20px;*/
+}
+
+.faq__question {
+  padding: 20px 20px 12px 20px;
+}
+
+.faq__toggler {
+  background: none;
+  border: none;
+  color: #cda052;
+  cursor: pointer;
+  font-size: 26px;
+  font-weight: bold;
+  text-align: left;
+  width: 100%;
+}
+
+.faq__questionText {
+  display: inline-block;
+  width: 85%;
+}
+
+.faq__toggler.faqOpen .fa-expand-alt,
+.faq__toggler .fa-compress-alt {
+  display: none;
+}
+
+.faq__toggler .fa-expand-alt,
+.faq__toggler.faqOpen .fa-compress-alt {
+  display: inline-block;
+  vertical-align: top;
+  width: 12%;
+}
+
+.faq__answer {
+  background-color: #fff;
+  border: 2px solid #003b5c;
+  color: #003b5c;
+  font-size: 19px;
+  margin: 0;
+  max-height: 0;
+  overflow: hidden;
+  padding: 0;
+  -webkit-transition: max-height 0.3s ease, padding 0.3s ease;
+  -moz-transition: max-height 0.3s ease, padding 0.3s ease;
+  -ms-transition: max-height 0.3s ease, padding 0.3s ease;
+  -o-transition: max-height 0.3s ease, padding 0.3s ease;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.faq__answer.faqOpen {
+  max-height: 2000px;
+  padding: 20px;
+}
+
+.faq__answer a {
+  color: #cda052;
+}
+
+.faq__answer .faq__phoneLink {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.faq__answer address {
+  padding-left: 20px;
+}
+
+.faq__row:last-child .faq__answer {
+  border-bottom-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+
+.moreInfo {
+  color: #003b5c;
+  font-size: 17px;
+  text-align: right;
+}
+
+.moreInfo__link {
+  color: #003b5c;
+  font-style: italic;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.moreInfo__link:hover {
+  color: #03102b;
+  cursor: pointer;
+}
+
+/******* Spanish Information *******/
+.spanishInformation__subtitle {
+  margin: 28px 0 14px 0;
+  text-decoration: underline;
+}
+
+/******* Bill Subscription *******/
+.billSubscription__formSpace {
+  margin-top: 40px;
+}
+
+.billSubscription__form {
+  margin: 0 auto;
+  max-width: 500px;
+}
+
+.billSubscription__fieldset {
+  border: none;
+}
+
+.billSubscription__legend {
+  color: #003b5c;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.billSubscription__label {
+  color: #cda052;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.billSubscription__input {
+  border: 2px solid #cda052;
+  box-sizing: border-box;
+  height: 34px;
+  width: 200px;
+}
+
+.billSubscription__submitButtonSpace {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.billSubscription__submitButton {
+  background-color: #cda052;
+  border: 1px solid #cda052;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  height: 34px;
+  padding-top: 2px;
+  width: 120px;
+}
+
+.billSubscription__subtitle {
+  color: #003b5c;
+  margin-top: 60px;
+}
+
+/******* Legislative Commissions *******/
+.legCommissions__title {
+  display: block;
+  margin: 30px 0 30px 0;
+  text-align: center;
+}
+
+.legCommissions__quickLinks {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 30px auto 50px auto;
+}
+
+.legCommissions__quickLink {
+  text-align: center;
+}
+
+.legCommissions__quickLink button {
+  background-color: #cda052;
+  border: 1px solid #cda052;
+  border-radius: 12px;
+  color: #fff;
+  font-size: 18px;
+  height: 60px;
+  text-decoration: none;
+  width: 290px;
+}
+
+.legCommissions__subTitle {
+  display: block;
+  margin: 30px 0 10px 0;
+}
+
+/******* Senate & Assembly Committee Aides *******/
+.committeeAides__title {
+  display: block;
+  margin: 30px 0 30px 0;
+  text-align: left;
+}
+
+.committeeAides__subTitle {
+  display: block;
+  margin: 30px 0 10px 0;
+}
+
+.committeeAides__subTitle--center {
+  color: #003b5c;
+  font-size: 24px;
+  margin-top: 30px;
+  text-align: center;
+
+@media (max-width: 1199px) {
+  .legCommissions__quickLink button {
+    width: 220px;
+  }
+}
+
+@media (max-width: 991px) {
+  .faqs {
+    width: 90%;
+  }
+}
+
+@media (max-width: 767px) {
+  .legCommissions__quickLinks {
+    flex-direction: column;
+  }
+
+  .legCommissions__quickLink {
+    margin: 14px auto;
+  }
+
+  .legCommissions__quickLink button {
+    width: 300px;
+  }
+}
+
+@media (max-width: 576px) {
+  .billSubscription__legend {
+    text-align: center;
+  }
+
+  .billSubscription__input {
+    margin-top: 6px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 450px) {
+  .moreInfo {
+    font-size: 3.8vw;
+  }
+}

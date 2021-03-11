@@ -1,0 +1,144 @@
+.homeBillSearch {
+  padding: 0 20px;
+}
+
+.homeBillSearch__box {
+  margin: 50px auto;
+  max-width: 650px;
+  width: 100%;
+}
+
+.homeBillSearch__top {
+  background-color: #03102b;
+  border-radius: 12px 12px 0 0;
+  padding: 16px 14px 8px 14px;
+}
+
+.homeBillSearch__title {
+  color: #fff;
+  margin: 0;
+  text-align: center;
+}
+
+.homeBillSearch__body {
+  background-color: #003b5c;
+  border-radius: 0 0 12px 12px;
+  padding: 26px 20px 26px 20px;
+}
+
+.homeBillSearch__fieldset {
+  border: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.homeBillSearch__legend {
+  color: #cda052;
+  font-size: 22px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.homeBillSearch__label {
+  color: #fff;
+  font-size: 18px;
+  margin-top: 14px;
+  text-align: left;
+}
+
+.homeBillSearch__label a {
+  color: #cda052;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.homeBillSearch__labelExtra {
+  color: #cda052;
+  display: block;
+  font-size: 14px;
+  margin-top: 6px;
+}
+
+.homeBillSearch__select,
+.homeBillSearch__input {
+  border: 2px solid #cda052;
+  border-radius: 0 10px 10px 0;
+  height: 28px;
+  margin-left: 8px;
+  padding: 4px 8px 4px 4px;
+  width: 234px;
+}
+
+.homeBillSearch__buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 20px auto 0 auto;
+  max-width: 460px;
+}
+
+.homeBillSearch__button {
+  background-color: #cda052;
+  border: 1px solid #cda052;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  height: 32px;
+  padding: 6px 18px;
+  vertical-align: middle;
+}
+
+@media (max-width: 576px) {
+  .homeBillSearch__form {
+    margin: 0 auto;
+    max-width: 440px;
+  }
+
+  .homeBillSearch__fieldset {
+    margin: 0 auto;
+    max-width: 350px;
+  }
+
+  .homeBillSearch__legend {
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 260px;
+  }
+
+  .homeBillSearch__label {
+    margin-left: auto;
+    margin-top: 32px;
+    margin-right: auto;
+    width: 90%;
+  }
+
+  .homeBillSearch__label a {
+    display: block;
+  }
+
+  .homeBillSearch__select,
+  .homeBillSearch__input {
+    border-radius: 10px;
+    display: block;
+    margin-left: 0;
+    margin-top: 6px;
+    padding: 4px 8px 4px 8px;
+    width: 100%;
+  }
+
+  .homeBillSearch__buttons {
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .homeBillSearch__button {
+    margin-top: 24px;
+    width: 200px;
+  }
+}

@@ -1,0 +1,148 @@
+.help__jump {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 30px auto 100px auto;
+  max-width: 1000px;
+}
+
+.help__jumpBox {
+  align-items: center;
+  background: #cda052;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 12px;
+  min-width: 29%;
+  padding: 8px 10px;
+  text-align: center;
+}
+
+.help__jumpLink {
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.help__article {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1050px;
+}
+
+.help__articleTitle {
+  background: #003b5c;
+  border-radius: 20px 20px 0px 0px;
+  box-sizing: border-box;
+  color: #fff;
+  margin-top: 50px;
+  padding: 16px 20px 16px 20px;
+  text-align: center;
+}
+
+.help__articleSubTitle {
+  color: #003b5c;
+  font-size: 16px;
+}
+
+.help__row {
+  margin-top: 40px;
+}
+
+.help__subTitle {
+  margin: 0;
+}
+
+#help__acronyms .help__subTitle {
+  color: #003b5c;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.help__subTitleLink {
+  color: #cda052;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.help__text {
+  color: #003b5c;
+  font-size: 18px;
+}
+
+.help__subTitle--center {
+  color: #003b5c;
+  font-size: 22px;
+  margin-top: 60px;
+  text-align: center;
+}
+
+.help__text a {
+  color: #cda052;
+  font-weight: bold;
+}
+
+.help__list li {
+  color: #003b5c;
+  font-size: 18px;
+  margin-top: 8px;
+}
+
+.help__acronymRow {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin-top: 22px;
+}
+
+.help__term {
+  border: 1px solid #003b5c;
+  color: #003b5c;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 5px 10px 3px 10px;
+  width: auto;
+}
+
+.help__description {
+  background-color: #003b5c;
+  border: 1px solid #003b5c;
+  color: #fff;
+  display: flex;
+  font-size: 18px;
+  margin-inline-start: unset;
+  padding: 5px 10px 3px 10px;
+  width: auto;
+}
+
+.help__highlight {
+  background: #cda052;
+  border-radius: 8px;
+  color: #003b5c;
+  font-style: italic;
+  padding: 3px 9px 1px 6px;
+}
+
+@media (max-width: 1099px) {
+  .help__jumpLink {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 767px) {
+  .help__jump {
+    width: 94%;
+  }
+
+  .help__jumpBox {
+    min-width: 38%;
+  }
+
+  .help__jumpLink {
+    font-size: 14px;
+  }
+}

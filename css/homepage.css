@@ -1,0 +1,397 @@
+.homeMain {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.homeWelcome {
+  -webkit-box-shadow: -3px 6px 18px 3px rgb(0 0 0 / 46%);
+  box-shadow: -3px 6px 18px 3px rgb(0 0 0 / 46%);
+  max-width: 1050px;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.homeWelcome .njList {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  max-width: 780px;
+  padding: 0 0 0 140px;
+}
+
+.homeWelcome .njListItem {
+  width: 48%;
+}
+
+.homeWelcome .njListItem i {
+  text-align: center;
+  width: 24px;
+
+}
+
+.homepage2021__scheduleBillSearch {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.homeCalendar,
+.homeBillSearch,
+.homeLiveProceedings,
+.homeFindLegislator {
+  margin-top: 90px;
+  width: 50%;
+}
+
+/***** SCHEDULE *****/
+.homeCalendar {
+  align-items: center;
+  background-color: #cda052;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px 30px 30px 60px;
+}
+
+.homeCalendar__title {
+  color: #003b5c;
+  font-size: 30px;
+}
+
+.homeCalendar__text {
+  color: #fff;
+  font-size: 21px;
+  text-align: center;
+}
+
+.homeCalendar__text a {
+  color: #003b5c;
+}
+
+#homeCalendar__cal {
+  height: 600px;
+  width: 90%;
+}
+
+/***** /SCHEDULE *****/
+
+/***** BILL SEARCH *****/
+.homeBillSearch__box {
+  margin: 50px auto;
+  max-width: 650px;
+  width: 100%;
+}
+
+.homeBillSearch__top {
+  background-color: #03102b;
+  border-radius: 12px 12px 0 0;
+  padding: 16px 14px 8px 14px;
+}
+
+.homeBillSearch__title {
+  color: #fff;
+  margin: 0;
+  text-align: center;
+}
+
+.homeBillSearch__body {
+  background-color: #003b5c;
+  border-radius: 0 0 12px 12px;
+  padding: 26px 20px 26px 20px;
+}
+
+.homeBillSearch__fieldset {
+  border: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.homeBillSearch__legend {
+  color: #cda052;
+  font-size: 22px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.homeBillSearch__label {
+  color: #fff;
+  font-size: 18px;
+  margin-top: 14px;
+  text-align: left;
+}
+
+.homeBillSearch__label a {
+  color: #cda052;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.homeBillSearch__labelExtra {
+  color: #cda052;
+  display: block;
+  font-size: 14px;
+  margin-top: 6px;
+}
+
+.homeBillSearch__select,
+.homeBillSearch__input {
+  border: 2px solid #cda052;
+  border-radius: 0 10px 10px 0;
+  height: 28px;
+  margin-left: 8px;
+  padding: 4px 8px 4px 4px;
+  width: 234px;
+}
+
+.homeBillSearch__buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 20px auto 0 auto;
+  max-width: 460px;
+}
+
+.homeBillSearch__button {
+  background-color: #cda052;
+  border: 1px solid #cda052;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  height: 32px;
+  padding: 6px 18px;
+  vertical-align: middle;
+}
+/***** /BILL SEARCH *****/
+
+/**** LIVE PROCEEDINGS ****/
+.homeLiveProceedings {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.homeLiveProceedings__graphic {
+  display: flex;
+  justify-content: center;
+  max-width: 450px;
+  text-decoration: none;
+}
+
+.homeLiveProceedings__linkLeft {
+  text-align: right;
+}
+
+.homeLiveProceedings__linkLeftTop {
+  color: #003b5c;
+  font-size: 70px;
+  font-weight: bold;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.homeLiveProceedings__divider {
+  background-color: #cda052;
+  border: none;
+  height: 4px;
+  margin: -10px 14px -3px 0;
+}
+
+.homeLiveProceedings__linkLeftBottom {
+  color: #000;
+  font-size: 36px;
+  font-style: italic;
+  font-weight: bold;
+  margin: 0 21px 0 0;
+  text-transform: uppercase;
+}
+
+.homeLiveProceedings__linkRightIMG {
+  width: 71px;
+}
+
+.homeLiveProceedings__text {
+  color: #003b5c;
+  font-size: 25px;
+  margin: 0;
+}
+
+.homeLiveProceedings__text a {
+  color: #cda052;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.homeLiveProceedings__text a i {
+  vertical-align: baseline;
+}
+/**** /LIVE PROCEEDINGS ****/
+
+/**** FIND YOUR LEGISLATOR ****/
+.homeFindLegislator {
+  background-color: #cda052;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-around;
+  padding: 30px 60px 30px 30px;
+  text-align: center;
+}
+
+.homeFindLegislator__left,
+.homeFindLegislator__right {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.homeFindLegislator__right {
+  padding-left: 18px;
+}
+
+.homeFindLegislator__title {
+  color: #003b5c;
+  font-size: 50px;
+  margin: 0;
+}
+
+.homeFindLegislator__list {
+  margin-top: 0;
+  text-align: left;
+}
+
+.homeFindLegislator__list li {
+  color: #fff;
+  font-size: 20px;
+  margin-top: 14px;
+}
+
+.homeFindLegislator__text {
+  margin: 0;
+}
+
+.homeFindLegislator__text a {
+  color: #003b5c;
+  font-size: 28px;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+/**** /FIND YOUR LEGISLATOR ****/
+
+/**** MEDIA QUERIES ****/
+@media (max-width: 1199px) {
+  .homeMain{
+    margin-bottom: 0;
+  }
+
+  .homeWelcome {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    padding: 0 20px;
+  }
+
+  .homeCalendar,
+  .homeBillSearch,
+  .homeLiveProceedings,
+  .homeFindLegislator {
+    margin-top: 100px;
+    width: 100%;
+  }
+
+  .homeCalendar,
+  .homeFindLegislator {
+    padding: 60px 30px 60px 30px;
+  }
+
+  .footer {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 991px) {
+  .homeWelcome .njList {
+    flex-direction: column;
+    padding: 0 0 0 30%;
+  }
+
+  .homeWelcome .njListItem {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .homeWelcome .njList {
+    padding: 0 0 0 2%;
+  }
+
+  #homeCalendar__cal {
+    height: 300px;
+    width: 100%;
+  }
+
+  .homeBillSearch__form {
+    margin: 0 auto;
+    max-width: 440px;
+  }
+
+  .homeBillSearch__fieldset {
+    margin: 0 auto;
+    max-width: 350px;
+  }
+
+  .homeBillSearch__legend {
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 260px;
+  }
+
+  .homeBillSearch__label {
+    margin-left: auto;
+    margin-top: 32px;
+    margin-right: auto;
+    width: 90%;
+  }
+
+  .homeBillSearch__label a {
+    display: block;
+  }
+
+  .homeBillSearch__select,
+  .homeBillSearch__input {
+    border-radius: 10px;
+    display: block;
+    margin-left: 0;
+    margin-top: 6px;
+    padding: 4px 8px 4px 8px;
+    width: 100%;
+  }
+
+  .homeBillSearch__buttons {
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .homeBillSearch__button {
+    margin-top: 24px;
+    width: 200px;
+  }
+
+  .homeFindLegislator {
+    flex-direction: column;
+  }
+
+  .homeFindLegislator__right {
+    padding: 45px 0 0 0;
+  }
+}

@@ -1,0 +1,46 @@
+.ethicsTutorial__subtitle {
+  color: #003b5c;
+  font-weight: bold;
+  margin: 40px auto 0 auto;
+  max-width: 1050px;
+}
+
+.ethicsTutorial__subtitle--bar {
+  background: #003b5c;
+  border-radius: 20px 20px 0px 0px;
+  box-sizing: border-box;
+  color: #fff;
+  margin-top: 50px;
+  padding: 16px 20px 16px 20px;
+}
+
+.ethicsTutorial__text {
+  color: #003b5c;
+  font-size: 18px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1050px;
+}
+
+.ethicsTutorial__text a,
+.ethicsTutorial__chapterList a {
+  color: #cda052;
+  font-weight: bold;
+}
+
+.redirectSelect__space {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 18px;
+  max-width: 1050px;
+}
+
+.ethicsTutorial__chapterList {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1050px;
+}
+
+.ethicsTutorial__chapterList li {
+  margin-top: 12px;
+}

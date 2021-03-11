@@ -1,0 +1,28 @@
+.main {
+  margin-bottom: 80px;
+  margin-top: 80px;
+}
+
+.disclaimer__privacy {
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 75%;
+}
+
+.disclaimer,
+.privacyPolicy {
+  margin-top: 50px;
+}
+
+.disclaimer__text,
+.privacyPolicy__text {
+  color: #003b5c;
+  font-size: 18px;
+  text-indent: 30px;
+}
+
+@media (max-width: 767px) {
+  .disclaimer__privacy {
+    width: calc(100% - 40px);
+  }
+}
