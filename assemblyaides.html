@@ -10,7 +10,7 @@
     <script src="https://kit.fontawesome.com/2661ac8955.js" crossorigin="anonymous"></script>
     <link href="css/base_styles.css" rel="stylesheet" />
     <link href="css/faq.css" rel="stylesheet" >
-    <link href="css/aide.css" rel="stylesheet"/>
+    <link href="css/aides.css" rel="stylesheet"/>
   </head>
   <body class="home">
     <!-- EMERGENCY BANNER -->
@@ -200,7 +200,7 @@
     <main class="main">
       <!-- FAQs -->
       <section class="committee">
-        <h2 class="faq__title">Assembly Committee Aides</h2>
+        <h2 class="faq__title">Committee Aides</h2>
 
         <div class="star__divider">
           <hr class="star__dividerLine star__dividerLine--left" />
@@ -208,562 +208,1018 @@
           <hr class="star__dividerLine star__dividerLine--right" />
         </div>
 
-        <h4 class="committeeAides__subTitle--center">Select a Committee:</h4>
+        <!--Buttons for Assembly and Senate-->
+        <div class="committee__jump njContainer">
+          <button class="committee__jumpbox" id="senateBtn" onclick="showSenateCommittee()">Senate Committee Aides</button>  
+          <button class="committee__jumpbox" id="assemblyBtn" onclick="showAssemblyCommittee()">Assembly Committee Aides</button>
+        </div>
+  
 
-        <!-- /.committee__lists -->
-        <div id="committee__lists" class="committeeClosed">
-          <div id="budget" class="committee__list">
-            <div class="committee__row">
-              <div class="committee__header"></div>
-              <strong class="committee__title">
-                <a href="javascript:showCommittee('ABU')">Assembly Budget Committee</a>
-              </strong>
-              <strong class="committee__subtitle">Democratic Aides</strong>
-              Aaron Binder, <a href="tel:+1-609-847-3500">609-847-3500</a>
-              <br>
-              Jade Bechelli, <a href="tel:+1-609-847-3500">609-847-3500</a>
-              <br />
-              <strong class="committee__subtitle">Republican Aides</strong>
+      <div id="assembly" class="assembly">
+        <!-- committee dropdown-->
+        <h4 class="committeeAides__subTitle--center"><label>Select an Assembly Committee:</h4>
+          <select id="assemblyCommittee" name="assemblyCommittee" class="committee__select">
+            <option selected="">Select a Committee</option>
+            <option value="a__agriculture">Agriculture</option>
+            <option value="a__appropriations">Appropriations</option>
+            <option value="a__budget">Budget</option>
+            <option value="a__commerce">Commerce and Economic Development</option>
+            <option value="a__community">Community Development and Affairs</option>
+            <option value="a__consumer">Consumer Affairs</option>
+            <option value="a__education">Education</option>
+            <option value="a__environment">Environment and Solid Waste</option>
+            <option value="a__financial">Financial Institutions and Insurance</option>
+            <option value="a__health">Health</option>
+            <option value="a__higher">Higher Education</option>
+            <option value="a__homeland">Homeland Security and State Preparedness</option>
+            <option value="a__housing">Housing</option>
+            <option value="a__human">Human Services</option>
+            <option value="a__judiciary">Judiciary</option>
+            <option value="a__labor">Labor</option>
+            <option value="a__law">Law and Public Safety</option>
+            <option value="a__military">Military and Veterans’ Affairs</option>
+            <option value="a__professions">Regulated Professions</option>
+            <option value="a__oversight">Regulated Oversight, Reform and Federal Relations</option>
+            <option value="a__science">Science, Innovation and Technology</option>
+            <option value="a__senior">Senior Services</option>
+            <option value="a__infrastructure">Special Committee on Infrastructure and Natural Resources</option>
+            <option value="a__govt">State and Local Government</option>
+            <option value="a__telecomm">Telecommunications and Utilities</option>
+            <option value="a__tourism">Tourism, Gaming and the Arts</option>
+            <option value="a__transportation">Transportation and Independent Authorities</option>
+            <option value="a__women">Women and Children</option>
+          </select>
+        </label>
+
+        <!-- Assembly Agriculture Committee -->
+        <div id="a__agriculture" class="committee__list">
+          <div class="committee__row">
+            <div class="committee__header">
+                <a href="javascript:showCommittee('AAN')">Assembly Agriculture Committee</a>
+            </div>
+            <div class="committee__subtitle">Democratic Aide</div>
+            <div class="committee__text">
+              Martin Sumners, <a href="tel:+1-609-847-3500">609-847-3500</a>
+            </div>
+            <div class="committee__subtitle">Republican Aides</div>
+            <div class="committee__text"> 
               Kevin Logan, <a href="tel:+1-609-847-3400">609-847-3400</a><br>
               Thea Sheridan, <a href="tel:+1-609-847-3400">609-847-3400</a>
-
-              <strong class="committee__subtitle">OLS Aides</strong>
-              <a href="javascript:repEmail_BH_ASM('ABU')">Scott A. Brodsky</a>,
-              <a href="tel:+1-609-847-3835">609-847-3835</a>
-              <br />
-              <a href="javascript:repEmail_BH_ASM('ABU')">Neal Lang</a>,
-              <a href="tel:+1-609-847-3835">609-847-3835</a>
-              
-            </div><!-- /.committee__row -->
+            </div>
+            <div class="committee__subtitle">OLS Aides</div>
+            <div class="committee__text">
+              <a href="javascript:repEmail_BH_ASM('AAN')">Lucinda Tiajoloff</a>, <a href="tel:+1-609-847-3855">609-847-3855</a><br />
+              <a href="javascript:repEmail_BH_ASM('AAN')">Neha Mehta Patel</a>, <a href="tel:+1-609-847-3855">609-847-3855</a>
+            </div>    
           </div>
         </div>
-        <!-- /.committee__lists -->
-        <div id="committee__lists" class="committeeClosed">
-          <div id="commerce" class="committee__list">
-            <div class="committee__row">
-              <div class="committee__header"></div>
-              <strong class="committee__title">
-                <a href="javascript:showCommittee('ACE')">Assembly Commerce and Economic Development Committee</a>
-              </strong>
-              <strong class="committee__subtitle">Democratic Aide</strong>
-              Catherine Tung, <a href="tel:+1-609-847-3500">609-847-3500</a>
-              <br />
-              <strong class="committee__subtitle">Republican Aides</strong>
+        <!-- Assembly Appropriations Committee -->
+        <div id="a__appropriations" class="committee__list">
+          <div class="committee__row">
+            <div class="committee__header">
+                <a href="javascript:showCommittee('AAP')">Assembly Appropriations Committee</a>
+            </div>
+            <div class="committee__subtitle">Democratic Aide</div>
+            <div class="committee__text">
+              Jennifer Taylor, <a href="tel:+1-609-847-3500">609-847-3500</a>
+            </div>
+            <div class="committee__subtitle">Republican Aides</div>
+            <div class="committee__text"> 
               Kevin Logan, <a href="tel:+1-609-847-3400">609-847-3400</a><br>
               Thea Sheridan, <a href="tel:+1-609-847-3400">609-847-3400</a>
-              <strong class="committee__subtitle">OLS Aide</strong>
-              <a href="javascript:repEmail_BH_ASM('ACE')">Robert C. Rothberg</a>,
-              <a href="tel:+1-609-847-3875">609-847-3875</a>   
-            </div><!-- /.committee__row -->
+            </div>
+            <div class="committee__subtitle">OLS Aides</div>
+            <div class="committee__text">
+              <a href="javascript:repEmail_BH_ASM('AAP')">Scott A. Brodsky</a>, <a href="tel:+1-609-847-3855">609-847-3855</a><br />
+              <a href="javascript:repEmail_BH_ASM('AAP')">Neal Lang</a>, <a href="tel:+1-609-847-3835">609-847-3835</a>
+            </div>    
           </div>
-        </div>       
-        <!-- /.committee__lists -->
-        <div id="committee__lists" class="committeeClosed">
-          <div id="committee__list--community" class="committee__list">
-            <div class="committee__row">
-              <div class="committee__header"></div>
-              <strong class="committee__title">
-                <a href="javascript:showCommittee('ACD')">Assembly Community Development and Affairs Committee</a>
-              </strong>
-              <strong class="committee__subtitle">Democratic Aide</strong>
-              Martin Sumners, <a href="tel:+1-609-847-3500">609-847-3500</a>
-              <br />
-              <strong class="committee__subtitle">Republican Aides</strong>
+        </div>     
+        <!-- Assembly Budget Committee -->
+        <div id="a__budget" class="committee__list">
+          <div class="committee__row">
+            <div class="committee__header">
+              <a href="javascript:showCommittee('ABU')">Assembly Budget Committee</a>
+            </div>
+            <div class="committee__subtitle">Democratic Aides</div>
+            <div class="committee__text"> 
+              Aaron Binder,<a href="tel:+1-609-847-3500">609-847-3500</a><br>
+              Jade Bechelli,<a href="tel:+1-609-847-3500">609-847-3500</a>
+            </div>
+            <div class="committee__subtitle">Republican Aides</div>
+            <div class="committee__text"> 
               Kevin Logan, <a href="tel:+1-609-847-3400">609-847-3400</a><br>
               Thea Sheridan, <a href="tel:+1-609-847-3400">609-847-3400</a>
-              <strong class="committee__subtitle">OLS Aides</strong>
-              <a href="javascript:repEmail_BH_ASM('ACD')">Benjamin Levy</a>,
-              <a href="tel:+1-609-847-3875">609-847-3875</a>   
-              <br>
-              <a href="javascript:repEmail_BH_ASM('ACD')">Joel Chapman</a>,
-              <a href="tel:+1-609-847-3875">609-847-3875</a>   
-            </div><!-- /.committee__row -->
+            </div>
+            <div class="committee__subtitle">OLS Aides</div>
+            <div class="committee__text">
+              <a href="javascript:repEmail_BH_ASM('ABU')">Scott A. Brodsky</a>, <a href="tel:+1-609-847-3835">609-847-3835</a><br />
+              <a href="javascript:repEmail_BH_ASM('ABU')">Neal Lang</a>, <a href="tel:+1-609-847-3835">609-847-3835</a>
+            </div>
+          </div>
+        </div>
+        <!-- Assembly Commerce Committee -->
+        <div id="a__commerce" class="committee__list">
+          <div class="committee__row">
+            <div class="committee__header">
+              <a href="javascript:showCommittee('ACE')">Assembly Commerce and Economic Development Committee</a>
+            </div>
+            <div class="committee__subtitle">Democratic Aide</div>
+            <div class="committee__text"> 
+              Catherine Tung, <a href="tel:+1-609-847-3500">609-847-3500</a>             
+            </div>
+            <div class="committee__subtitle">Republican Aides</div>
+            <div class="committee__text"> 
+              Kevin Logan, <a href="tel:+1-609-847-3400">609-847-3400</a><br>
+              Thea Sheridan, <a href="tel:+1-609-847-3400">609-847-3400</a>
+            </div>
+            <div class="committee__subtitle">OLS Aide</div>
+            <div class="committee__text">
+              <a href="javascript:repEmail_BH_ASM('ACE')">Robert C. Rothberg</a>, <a href="tel:+1-609-847-3875">609-847-3875</a>
+            </div>  
           </div>
         </div>    
-        <!-- /.committee__lists -->
-        <div id="committee__lists" class="committeeClosed">
-          <div id="committee__list--consumer" class="committee__list">
-            <div class="committee__row">
-              <div class="committee__header"></div>
-              <strong class="committee__title">
-                <a href="javascript:showCommittee('ACO')">Assembly Consumer Affairs Committee</a>
-              </strong>
-              <strong class="committee__subtitle">Democratic Aides</strong>
-              Casey Nebus, <a href="tel:+1-609-847-3500">609-847-3500</a>
-              <br>
+        <!-- Assembly Community Dev Committee -->
+        <div id="a__community" class="committee__list">
+          <div class="committee__row">
+            <div class="committee__header">
+              <a href="javascript:showCommittee('ACD')">Assembly Community Development and Affairs Committee</a>
+            </div>
+            <div class="committee__subtitle">Democratic Aide</div>
+            <div class="committee__text"> 
+              Martin Sumners, <a href="tel:+1-609-847-3500">609-847-3500</a>
+            </div>
+            <div class="committee__subtitle">Republican Aides</div>
+            <div class="committee__text"> 
+              Kevin Logan, <a href="tel:+1-609-847-3400">609-847-3400</a><br>
+              Thea Sheridan, <a href="tel:+1-609-847-3400">609-847-3400</a>
+            </div>
+            <div class="committee__subtitle">OLS Aides</div>
+            <div class="committee__text">
+              <a href="javascript:repEmail_BH_ASM('ACD')">Benjamin Levy</a>, <a href="tel:+1-609-847-3875">609-847-3875</a><br>
+              <a href="javascript:repEmail_BH_ASM('ACD')">Joel Chapman</a>, <a href="tel:+1-609-847-3875">609-847-3875</a>
+            </div>              
+          </div>
+        </div>
+        <!-- Assembly Consumer Committee -->
+        <div id="a__consumer" class="committee__list">
+          <div class="committee__row">
+            <div class="committee__header">
+              <a href="javascript:showCommittee('ACO')">Assembly Consumer Affairs Committee</a>
+            </div>
+            <div class="committee__subtitle">Democratic Aides</div>
+            <div class="committee__text"> 
+              Casey Nebus, <a href="tel:+1-609-847-3500">609-847-3500</a><br>
               Sam Aloi, <a href="tel:+1-609-847-3500">609-847-3500</a>
-              <br />
-              <strong class="committee__subtitle">Republican Aides</strong>
+            </div>
+            <div class="committee__subtitle">Republican Aides</div>
+            <div class="committee__text"> 
               Kevin Logan, <a href="tel:+1-609-847-3400">609-847-3400</a><br>
               Thea Sheridan, <a href="tel:+1-609-847-3400">609-847-3400</a>
-              <strong class="committee__subtitle">OLS Aides</strong>
-              <a href="javascript:repEmail_BH_ASM('ACO')">Ian Siracusa</a>,
-              <a href="tel:+1-609-847-3870">609-847-3870</a>   
-              <br>
-              <a href="javascript:repEmail_BH_ASM('ACO')">Jamie L. Jennings</a>,
-              <a href="tel:+1-609-847-3870">609-847-3870</a>   
-            </div><!-- /.committee__row -->
+            </div>
+            <div class="committee__subtitle">OLS Aides</div>
+            <div class="committee__text">
+              <a href="javascript:repEmail_BH_ASM('ACO')">Ian Siracusa</a>, <a href="tel:+1-609-847-3870">609-847-3870</a><br>
+              <a href="javascript:repEmail_BH_ASM('ACO')">Jamie L. Jennings</a>, <a href="tel:+1-609-847-3870">609-847-3870</a>
+            </div>
           </div>
-        </div>      
-        <!-- /.committee__lists -->
-        <div id="committee__lists" class="committeeClosed">
-          <div id="committee__list--education" class="committee__list">
-            <div class="committee__row">
-              <div class="committee__header"></div>
-              <strong class="committee__title">
-                <a href="javascript:showCommittee('AED')">Assembly Education Committee</a>
-              </strong>
-              <strong class="committee__subtitle">Democratic Aide</strong>
+        </div>
+        <!-- Assembly Education Committee -->
+        <div id="a__education" class="committee__list">
+          <div class="committee__row">
+            <div class="committee__header">
+              <a href="javascript:showCommittee('AED')">Assembly Education Committee</a>
+            </div>
+            <div class="committee__subtitle">Democratic Aide</div>
+            <div class="committee__text"> 
               Jade Bechelli, <a href="tel:+1-609-847-3500">609-847-3500</a>
-              <br />
-              <strong class="committee__subtitle">Republican Aides</strong>
+            </div>
+            <div class="committee__subtitle">Republican Aides</div>
+            <div class="committee__text"> 
               Kevin Logan, <a href="tel:+1-609-847-3400">609-847-3400</a><br>
               Thea Sheridan, <a href="tel:+1-609-847-3400">609-847-3400</a>
-              <strong class="committee__subtitle">OLS Aides</strong>
-              <a href="javascript:repEmail_BH_ASM('AED')">Christopher Myles</a>,
-              <a href="tel:+1-609-847-3850">609-847-3850</a>   
-              <br>
-              <a href="javascript:repEmail_BH_ASM('AED')">Joseph Pistritto</a>,
-              <a href="tel:+1-609-847-3850">609-847-3850</a>   
-            </div><!-- /.committee__row -->
+            </div>
+            <div class="committee__subtitle">OLS Aides</div>
+            <div class="committee__text">
+              <a href="javascript:repEmail_BH_ASM('AED')">Christopher Myles</a>, <a href="tel:+1-609-847-3850">609-847-3850</a><br>
+              <a href="javascript:repEmail_BH_ASM('AED')">Joseph Pistritto</a>, <a href="tel:+1-609-847-3850">609-847-3850</a>
+            </div>             
           </div>
         </div> 
-        <!-- /.committee__lists -->
-        <div id="committee__lists" class="committeeClosed">
-          <div id="committee__list--environment" class="committee__list">
-            <div class="committee__row">
-              <div class="committee__header"></div>
-              <strong class="committee__title">
-                <a href="javascript:showCommittee('AEN')">Assembly Environment and Solid Waste Committee</a>
-              </strong>
-              <strong class="committee__subtitle">Democratic Aide</strong>
+        <!-- Assembly Environment Committee -->
+        <div id="a__environment" class="committee__list">
+          <div class="committee__row">
+            <div class="committee__header">
+              <a href="javascript:showCommittee('AEN')">Assembly Environment and Solid Waste Committee</a>
+            </div>
+            <div class="committee__subtitle">Democratic Aide</div>
+            <div class="committee__text"> 
               Frank Ferrantelli, <a href="tel:+1-609-847-3500">609-847-3500</a>
-              <br />
-              <strong class="committee__subtitle">Republican Aides</strong>
+            </div>
+            <div class="committee__subtitle">Republican Aides</div>
+            <div class="committee__text"> 
               Kevin Logan, <a href="tel:+1-609-847-3400">609-847-3400</a><br>
               Thea Sheridan, <a href="tel:+1-609-847-3400">609-847-3400</a>
-              <strong class="committee__subtitle">OLS Aide</strong>
-              <a href="javascript:repEmail_BH_ASM('AEN')">Carrie Anne Calvo-Hahn</a>,
-              <a href="tel:+1-609-847-3855">609-847-3855</a>   
-            </div><!-- /.committee__row -->
+            </div>
+            <div class="committee__subtitle">OLS Aide</div>
+            <div class="committee__text">
+              <a href="javascript:repEmail_BH_ASM('AEN')">Carrie Anne Calvo-Hahn</a>, <a href="tel:+1-609-847-3855">609-847-3855</a> 
+            </div>
           </div>
-        </div> 
-        <!-- /.committee__lists -->     
-        <div id="committee__lists" class="committeeClosed">
-          <div id="committee__list--financial" class="committee__list">
-            <div class="committee__row">
-              <div class="committee__header"></div>
-              <strong class="committee__title">
-                <a href="javascript:showCommittee('AFI')">Assembly Financial Institutions and Insurance Committee</a>
-              </strong>
-              <strong class="committee__subtitle">Democratic Aide</strong>
+        </div>
+        <!-- Assembly Financial Committee -->     
+        <div id="a__financial" class="committee__list">
+          <div class="committee__row">
+            <div class="committee__header">
+              <a href="javascript:showCommittee('AFI')">Assembly Financial Institutions and Insurance Committee</a>
+            </div>
+            <div class="committee__subtitle">Democratic Aide</div>
+            <div class="committee__text"> 
               Mark Iaconelli, <a href="tel:+1-609-847-3500">609-847-3500</a>
-              <br />
-              <strong class="committee__subtitle">Republican Aides</strong>
+            </div>
+            <div class="committee__subtitle">Republican Aides</div>
+            <div class="committee__text"> 
               Kevin Logan, <a href="tel:+1-609-847-3400">609-847-3400</a><br>
               Thea Sheridan, <a href="tel:+1-609-847-3400">609-847-3400</a>
-              <strong class="committee__subtitle">OLS Aides</strong>
-              <a href="javascript:repEmail_BH_ASM('AFI')">Elvin Perez</a>,
-              <a href="tel:+1-609-847-3845">609-847-3845</a><br>
-              <a href="javascript:repEmail_BH_ASM('AFI')">Christian H. Weisenbacher</a>,
-              <a href="tel:+1-609-847-3845">609-847-3845</a>   
-            </div><!-- /.committee__row -->
+            </div>
+            <div class="committee__subtitle">OLS Aides</div>
+            <div class="committee__text">
+              <a href="javascript:repEmail_BH_ASM('AFI')">Elvin Perez</a>, <a href="tel:+1-609-847-3845">609-847-3845</a><br>
+              <a href="javascript:repEmail_BH_ASM('AFI')">Christian H. Weisenbacher</a>, <a href="tel:+1-609-847-3845">609-847-3845</a> 
+            </div>
           </div>
-        </div> 
-        <!-- /.committee__lists -->     
-        <div id="committee__lists" class="committeeClosed">
-          <div id="committee__list--health" class="committee__list">
-            <div class="committee__row">
-              <div class="committee__header"></div>
-              <strong class="committee__title">
-                <a href="javascript:showCommittee('AHE')">Assembly Health Committee</a>
-              </strong>
-              <strong class="committee__subtitle">Democratic Aide</strong>
+        </div>
+        <!-- Assembly Health Committee -->     
+        <div id="a__health" class="committee__list">
+          <div class="committee__row">
+            <div class="committee__header">
+              <a href="javascript:showCommittee('AHE')">Assembly Health Committee</a>
+            </div>
+            <div class="committee__subtitle">Democratic Aide</div>
+            <div class="committee__text"> 
               Frank Ferrantelli, <a href="tel:+1-609-847-3500">609-847-3500</a>
-              <br />
-              <strong class="committee__subtitle">Republican Aides</strong>
+            </div>
+            <div class="committee__subtitle">Republican Aides</div>
+            <div class="committee__text"> 
               Kevin Logan, <a href="tel:+1-609-847-3400">609-847-3400</a><br>
               Thea Sheridan, <a href="tel:+1-609-847-3400">609-847-3400</a>
-              <strong class="committee__subtitle">OLS Aides</strong>
-              <a href="javascript:repEmail_BH_ASM('AHE')">Richard Diaconu</a>,
-              <a href="tel:+1-609-847-3860">609-847-3860</a><br>
-              <a href="javascript:repEmail_BH_ASM('AHE')">Justin Lucero</a>,
-              <a href="tel:+1-609-847-3860">609-847-3860</a>   
-            </div><!-- /.committee__row -->
+            </div>
+            <div class="committee__subtitle">OLS Aides</div>
+            <div class="committee__text">
+              <a href="javascript:repEmail_BH_ASM('AHE')">Richard Diaconu</a>, <a href="tel:+1-609-847-3860">609-847-3860</a><br>
+              <a href="javascript:repEmail_BH_ASM('AHE')">Justin Lucero</a>, <a href="tel:+1-609-847-3860">609-847-3860</a>   
+            </div>
           </div>
-        </div> 
-        <!-- /.committee__lists -->     
-        <div id="committee__lists" class="committeeClosed">
-          <div id="committee__list--higher" class="committee__list">
-            <div class="committee__row">
-              <div class="committee__header"></div>
-              <strong class="committee__title">
-                <a href="javascript:showCommittee('AHI')">Assembly Higher Education Committee</a>
-              </strong>
-              <strong class="committee__subtitle">Democratic Aide</strong>
+        </div>
+        <!-- Assembly Higher Edu Committee -->     
+        <div id="a__higher" class="committee__list">
+          <div class="committee__row">
+            <div class="committee__header">
+              <a href="javascript:showCommittee('AHI')">Assembly Higher Education Committee</a>
+            </div>
+            <div class="committee__subtitle">Democratic Aide</div>
+            <div class="committee__text"> 
               Bryana DeVeaux, <a href="tel:+1-609-847-3500">609-847-3500</a>
-              <br />
-              <strong class="committee__subtitle">Republican Aides</strong>
+            </div>
+            <div class="committee__subtitle">Republican Aides</div>
+            <div class="committee__text"> 
               Kevin Logan, <a href="tel:+1-609-847-3400">609-847-3400</a><br>
               Thea Sheridan, <a href="tel:+1-609-847-3400">609-847-3400</a>
-              <strong class="committee__subtitle">OLS Aide</strong>
-              <a href="javascript:repEmail_BH_ASM('AHI')">Adrian G. Crook</a>,
-              <a href="tel:+1-609-847-3850">609-847-3850</a>   
-            </div><!-- /.committee__row -->
+            </div>
+            <div class="committee__subtitle">OLS Aide</div>
+            <div class="committee__text">
+              <a href="javascript:repEmail_BH_ASM('AHI')">Adrian G. Crook</a>, <a href="tel:+1-609-847-3850">609-847-3850</a>   
+            </div>
           </div>
-        </div> 
-        <!-- /.committee__lists -->     
-        <div id="committee__lists" class="committeeClosed">
-          <div id="committee__list--homeland" class="committee__list">
-            <div class="committee__row">
-              <div class="committee__header"></div>
-              <strong class="committee__title">
-                <a href="javascript:showCommittee('AHS')">Assembly Homeland Security and State Preparedness Committee</a>
-              </strong>
-              <strong class="committee__subtitle">Democratic Aide</strong>
+        </div>
+        <!-- Assembly Homeland Security Committee -->     
+        <div id="a__homeland" class="committee__list">
+          <div class="committee__row">
+            <div class="committee__header">
+              <a href="javascript:showCommittee('AHS')">Assembly Homeland Security and State Preparedness Committee</a>
+            </div>
+            <div class="committee__subtitle">Democratic Aide</div>
+            <div class="committee__text"> 
               Sherwood Goodenough, <a href="tel:+1-609-847-3500">609-847-3500</a>
-              <br />
-              <strong class="committee__subtitle">Republican Aides</strong>
+            </div>
+            <div class="committee__subtitle">Republican Aides</div>
+            <div class="committee__text"> 
               Kevin Logan, <a href="tel:+1-609-847-3400">609-847-3400</a><br>
               Thea Sheridan, <a href="tel:+1-609-847-3400">609-847-3400</a>
-              <strong class="committee__subtitle">OLS Aides</strong>
-              <a href="javascript:repEmail_BH_ASM('AHS')">Kristin Brunner Santos</a>,
-              <a href="tel:+1-609-847-3870">609-847-3870</a><br>
-              <a href="javascript:repEmail_BH_ASM('AHS')">Jamie L. Jennings</a>,
-              <a href="tel:+1-609-847-3870">609-847-3870</a>   
-            </div><!-- /.committee__row -->
+            </div>
+            <div class="committee__subtitle">OLS Aides</div>
+            <div class="committee__text">
+              <a href="javascript:repEmail_BH_ASM('AHS')">Kristin Brunner Santos</a>, <a href="tel:+1-609-847-3870">609-847-3870</a><br>
+              <a href="javascript:repEmail_BH_ASM('AHS')">Jamie L. Jennings</a>, <a href="tel:+1-609-847-3870">609-847-3870</a>     
+            </div>
           </div>
-        </div> 
-        <!-- /.committee__lists -->     
-        <div id="committee__lists" class="committeeClosed">
-          <div id="committee__list--housing" class="committee__list">
-            <div class="committee__row">
-              <div class="committee__header"></div>
-              <strong class="committee__title">
-                <a href="javascript:showCommittee('AHO')">Assembly Housing Committee</a>
-              </strong>
-              <strong class="committee__subtitle">Democratic Aides</strong>
+        </div>
+        <!-- Assembly Housing Committee -->     
+        <div id="a__housing" class="committee__list">
+          <div class="committee__row">
+            <div class="committee__header">
+              <a href="javascript:showCommittee('AHO')">Assembly Housing Committee</a>
+            </div>
+            <div class="committee__subtitle">Democratic Aides</div>
+            <div class="committee__text"> 
               Sam Aloi, <a href="tel:+1-609-847-3500">609-847-3500</a><br>
               Sherwood Goodenough, <a href="tel:+1-609-847-3500">609-847-3500</a>
-              <br />
-              <strong class="committee__subtitle">Republican Aides</strong>
+            </div>
+            <div class="committee__subtitle">Republican Aides</div>
+            <div class="committee__text"> 
               Kevin Logan, <a href="tel:+1-609-847-3400">609-847-3400</a><br>
               Thea Sheridan, <a href="tel:+1-609-847-3400">609-847-3400</a>
-              <strong class="committee__subtitle">OLS Aide</strong>
-              <a href="javascript:repEmail_BH_ASM('AHO')">Chris Jewett</a>,
-              <a href="tel:+1-609-847-3875">609-847-3875</a>   
-            </div><!-- /.committee__row -->
+            </div>
+            <div class="committee__subtitle">OLS Aides</div>
+            <div class="committee__text">
+              <a href="javascript:repEmail_BH_ASM('AHO')">Chris Jewett</a>, <a href="tel:+1-609-847-3875">609-847-3875</a>     
+            </div>
           </div>
-        </div> 
-        <!-- /.committee__lists -->     
-        <div id="committee__lists" class="committeeClosed">
-          <div id="committee__list--human" class="committee__list">
-            <div class="committee__row">
-              <div class="committee__header"></div>
-              <strong class="committee__title">
-                <a href="javascript:showCommittee('AHU')">Assembly Human Services Committee</a>
-              </strong>
-              <strong class="committee__subtitle">Democratic Aide</strong>
-              Anita Ouedraogo, <a href="tel:+1-609-847-3500">609-847-3500</a>
-              <br />
-              <strong class="committee__subtitle">Republican Aides</strong>
+        </div>
+        <!-- Assembly Human Services Committee -->     
+        <div id="a__human" class="committee__list">
+          <div class="committee__row">
+            <div class="committee__header">
+              <a href="javascript:showCommittee('AHU')">Assembly Human Services Committee</a>
+            </div>
+            <div class="committee__subtitle">Democratic Aide</div>
+            <div class="committee__text"> 
+              Anita Ouedraogo, <a href="tel:+1-609-847-3500">609-847-3500</a><br>
+            </div>
+            <div class="committee__subtitle">Republican Aides</div>
+            <div class="committee__text"> 
               Kevin Logan, <a href="tel:+1-609-847-3400">609-847-3400</a><br>
               Thea Sheridan, <a href="tel:+1-609-847-3400">609-847-3400</a>
-              <strong class="committee__subtitle">OLS Aide</strong>
-              <a href="javascript:repEmail_BH_ASM('AHU')">Michele Leblanc</a>,
-              <a href="tel:+1-609-847-3860">609-847-3860</a>   
-            </div><!-- /.committee__row -->
+            </div>
+            <div class="committee__subtitle">OLS Aides</div>
+            <div class="committee__text">
+              <a href="javascript:repEmail_BH_ASM('AHU')">Michele Leblanc</a>, <a href="tel:+1-609-847-3860">609-847-3860</a>     
+            </div>
           </div>
         </div> 
-        <!-- /.committee__lists -->     
-        <div id="committee__lists" class="committeeClosed">
-          <div id="committee__list--judiciary" class="committee__list">
-            <div class="committee__row">
-              <div class="committee__header"></div>
-              <strong class="committee__title">
-                <a href="javascript:showCommittee('AJU')">Assembly Judiciary Committee</a>
-              </strong>
-              <strong class="committee__subtitle">Democratic Aide</strong>
-              Mark Iaconelli, <a href="tel:+1-609-847-3500">609-847-3500</a>
-              <strong class="committee__subtitle">Republican Aides</strong>
+        <!-- Assembly Judiciary Committee -->     
+        <div id="a__judiciary" class="committee__list">
+          <div class="committee__row">
+            <div class="committee__header">
+              <a href="javascript:showCommittee('AJU')">Assembly Judiciary Committee</a>
+            </div>
+            <div class="committee__subtitle">Democratic Aide</div>
+            <div class="committee__text"> 
+              Mark Iaconelli, <a href="tel:+1-609-847-3500">609-847-3500</a><br>
+            </div>
+            <div class="committee__subtitle">Republican Aides</div>
+            <div class="committee__text"> 
               Kevin Logan, <a href="tel:+1-609-847-3400">609-847-3400</a><br>
               Thea Sheridan, <a href="tel:+1-609-847-3400">609-847-3400</a>
-              <strong class="committee__subtitle">OLS Aides</strong>
-              <a href="javascript:repEmail_BH_ASM('AJU')">Miriam Bavati</a>,
-              <a href="tel:+1-609-847-3865">609-847-3865</a><br>
-              <a href="javascript:repEmail_BH_ASM('AJU')">Sarita J. Welsh</a>,
-              <a href="tel:+1-609-847-3865">609-847-3865</a>   
-            </div><!-- /.committee__row -->
+            </div>
+            <div class="committee__subtitle">OLS Aides</div>
+            <div class="committee__text">
+              <a href="javascript:repEmail_BH_ASM('AJU')">Miriam Bavati</a>, <a href="tel:+1-609-847-3865">609-847-3865</a><br>
+              <a href="javascript:repEmail_BH_ASM('AJU')">Sarita J. Welsh</a>, <a href="tel:+1-609-847-3865">609-847-3865</a>
+            </div>   
           </div>
         </div> 
-        <!-- /.committee__lists -->     
-        <div id="committee__lists" class="committeeClosed">
-          <div id="committee__list--labor" class="committee__list">
-            <div class="committee__row">
-              <div class="committee__header"></div>
-              <strong class="committee__title">
-                <a href="javascript:showCommittee('ALA')">Assembly Labor Committee</a>
-              </strong>
-              <strong class="committee__subtitle">Democratic Aide</strong>
-              Kristin Powell, <a href="tel:+1-609-847-3500">609-847-3500</a>
-              <strong class="committee__subtitle">Republican Aides</strong>
+        <!-- Assembly Labor Committee -->     
+        <div id="a__labor" class="committee__list">
+          <div class="committee__row">
+            <div class="committee__header">
+              <a href="javascript:showCommittee('ALA')">Assembly Labor Committee</a>
+            </div>
+            <div class="committee__subtitle">Democratic Aide</div>
+            <div class="committee__text"> 
+              Kristin Powell, <a href="tel:+1-609-847-3500">609-847-3500</a><br>
+            </div>
+            <div class="committee__subtitle">Republican Aides</div>
+            <div class="committee__text"> 
               Kevin Logan, <a href="tel:+1-609-847-3400">609-847-3400</a><br>
               Thea Sheridan, <a href="tel:+1-609-847-3400">609-847-3400</a>
-              <strong class="committee__subtitle">OLS Aide</strong>
-              <a href="javascript:repEmail_BH_ASM('ALA')">Jamie E. Galemba</a>,
-              <a href="tel:+1-609-847-3845">609-847-3845</a>   
-            </div><!-- /.committee__row -->
+            </div>
+            <div class="committee__subtitle">OLS Aide</div>
+            <div class="committee__text">
+              <a href="javascript:repEmail_BH_ASM('ALA')">Jamie E. Galemba</a>, <a href="tel:+1-609-847-3845">609-847-3845</a>
+            </div>       
           </div>
-        </div> 
-        <!-- /.committee__lists -->     
-        <div id="committee__lists" class="committeeClosed">
-          <div id="committee__list--law" class="committee__list">
-            <div class="committee__row">
-              <div class="committee__header"></div>
-              <strong class="committee__title">
-                <a href="javascript:showCommittee('ALP')">Assembly Law and Public Safety Committee</a>
-              </strong>
-              <strong class="committee__subtitle">Democratic Aide</strong>
-              Shannon Natale, <a href="tel:+1-609-847-3500">609-847-3500</a>
-              <strong class="committee__subtitle">Republican Aides</strong>
+        </div>
+        <!-- Assembly Law Committee -->     
+        <div id="a__law" class="committee__list">
+          <div class="committee__row">
+            <div class="committee__header">
+              <a href="javascript:showCommittee('ALP')">Assembly Law and Public Safety Committee</a>
+            </div>
+            <div class="committee__subtitle">Democratic Aide</div>
+            <div class="committee__text"> 
+              Shannon Natale, <a href="tel:+1-609-847-3500">609-847-3500</a><br>
+            </div>
+            <div class="committee__subtitle">Republican Aides</div>
+            <div class="committee__text"> 
               Kevin Logan, <a href="tel:+1-609-847-3400">609-847-3400</a><br>
               Thea Sheridan, <a href="tel:+1-609-847-3400">609-847-3400</a>
-              <strong class="committee__subtitle">OLS Aides</strong>
-              <a href="javascript:repEmail_BH_ASM('ALP')">Thomas M. Kelly</a>,
-              <a href="tel:+1-609-847-3870">609-847-3870</a><br>
-              <a href="javascript:repEmail_BH_ASM('ALP')">Gabriella B. Ferri</a>,
-              <a href="tel:+1-609-847-3870">609-847-3870</a>   
-            </div><!-- /.committee__row -->
+            </div>
+            <div class="committee__subtitle">OLS Aides</div>
+            <div class="committee__text">
+              <a href="javascript:repEmail_BH_ASM('ALP')">Thomas M. Kelly</a>, <a href="tel:+1-609-847-3870">609-847-3870</a><br>
+              <a href="javascript:repEmail_BH_ASM('ALP')">Gabriella B. Ferri</a>, <a href="tel:+1-609-847-3870">609-847-3870</a>
+            </div>               
           </div>
-        </div> 
-        <!-- /.committee__lists -->     
-        <div id="committee__lists" class="committeeClosed">
-          <div id="committee__list--military" class="committee__list">
-            <div class="committee__row">
-              <div class="committee__header"></div>
-              <strong class="committee__title">
-                <a href="javascript:showCommittee('AMV')">Assembly Military and Veterans’ Affairs Committee</a>
-              </strong>
-              <strong class="committee__subtitle">Democratic Aide</strong>
-              Sherwood Goodenough, <a href="tel:+1-609-847-3500">609-847-3500</a>
-              <strong class="committee__subtitle">Republican Aides</strong>
+        </div>
+        <!-- Assembly Military Committee -->     
+        <div id="a__military" class="committee__list">
+          <div class="committee__row">
+            <div class="committee__header">
+              <a href="javascript:showCommittee('AMV')">Assembly Military and Veterans’ Affairs Committee</a>
+            </div>
+            <div class="committee__subtitle">Democratic Aide</div>
+            <div class="committee__text"> 
+              Sherwood Goodenough, <a href="tel:+1-609-847-3500">609-847-3500</a><br>
+            </div>
+            <div class="committee__subtitle">Republican Aides</div>
+            <div class="committee__text"> 
               Kevin Logan, <a href="tel:+1-609-847-3400">609-847-3400</a><br>
               Thea Sheridan, <a href="tel:+1-609-847-3400">609-847-3400</a>
-              <strong class="committee__subtitle">OLS Aide</strong>
-              <a href="javascript:repEmail_BH_ASM('AMV')">Tracey F. Pino Murphy</a>,
-              <a href="tel:+1-609-847-3890">609-847-3890</a>   
-            </div><!-- /.committee__row -->
+            </div>
+            <div class="committee__subtitle">OLS Aide</div>
+            <div class="committee__text">
+              <a href="javascript:repEmail_BH_ASM('AMV')">Tracey F. Pino Murphy</a>, <a href="tel:+1-609-847-3890">609-847-3890</a>   
+            </div>
           </div>
         </div> 
-        <!-- /.committee__lists -->     
-        <div id="committee__lists" class="committeeClosed">
-          <div id="committee__list--professions" class="committee__list">
-            <div class="committee__row">
-              <div class="committee__header"></div>
-              <strong class="committee__title">
-                <a href="javascript:showCommittee('ARP')">Assembly Regulated Professions Committee</a>
-              </strong>
-              <strong class="committee__subtitle">Democratic Aide</strong>
-              Bryana DeVeaux, <a href="tel:+1-609-847-3500">609-847-3500</a>
-              <strong class="committee__subtitle">Republican Aides</strong>
+        <!-- Assembly Professions Committee -->     
+        <div id="a__professions" class="committee__list">
+          <div class="committee__row">
+            <div class="committee__header">
+              <a href="javascript:showCommittee('ARP')">Assembly Regulated Professions Committee</a>
+            </div>
+            <div class="committee__subtitle">Democratic Aide</div>
+            <div class="committee__text"> 
+              Bryana DeVeaux, <a href="tel:+1-609-847-3500">609-847-3500</a><br>
+            </div>
+            <div class="committee__subtitle">Republican Aides</div>
+            <div class="committee__text"> 
               Kevin Logan, <a href="tel:+1-609-847-3400">609-847-3400</a><br>
               Thea Sheridan, <a href="tel:+1-609-847-3400">609-847-3400</a>
-              <strong class="committee__subtitle">OLS Aide</strong>
-              <a href="javascript:repEmail_BH_ASM('ARP')">Liza Ackerman</a>,
-              <a href="tel:+1-609-847-3845">609-847-3845</a>   
-            </div><!-- /.committee__row -->
+            </div>
+            <div class="committee__subtitle">OLS Aide</div>
+            <div class="committee__text">
+              <a href="javascript:repEmail_BH_ASM('ARP')">Liza Ackerman</a>, <a href="tel:+1-609-847-3845">609-847-3845</a>   
+            </div>
           </div>
-        </div> 
-        <!-- /.committee__lists -->     
-        <div id="committee__lists" class="committeeClosed">
-          <div id="committee__list--oversight" class="committee__list">
-            <div class="committee__row">
-              <div class="committee__header"></div>
-              <strong class="committee__title">
-                <a href="javascript:showCommittee('AOF')">Assembly Oversight, Reform and Federal Relations Committee</a>
-              </strong>
-              <strong class="committee__subtitle">Democratic Aides</strong>
+        </div>
+        <!-- Assembly Oversight Committee -->     
+        <div id="a__oversight" class="committee__list">
+          <div class="committee__row">
+            <div class="committee__header">
+              <a href="javascript:showCommittee('AOF')">Assembly Oversight, Reform and Federal Relations Committee</a>
+            </div>
+            <div class="committee__subtitle">Democratic Aides</div>
+            <div class="committee__text"> 
               Martin Sumners, <a href="tel:+1-609-847-3500">609-847-3500</a><br>
               Anita Ouedraogo, <a href="tel:+1-609-847-3500">609-847-3500</a>
-              <strong class="committee__subtitle">Republican Aides</strong>
+            </div>
+            <div class="committee__subtitle">Republican Aides</div>
+            <div class="committee__text"> 
               Kevin Logan, <a href="tel:+1-609-847-3400">609-847-3400</a><br>
               Thea Sheridan, <a href="tel:+1-609-847-3400">609-847-3400</a>
-              <strong class="committee__subtitle">OLS Aide</strong>
-              <a href="javascript:repEmail_BH_ASM('AOF')">Nicolas Soto</a>,
-              <a href="tel:+1-609-847-3890">609-847-3890</a>   
-            </div><!-- /.committee__row -->
-          </div>
-        </div> 
-        <!-- /.committee__lists -->     
-        <div id="committee__lists" class="committeeClosed">
-          <div id="committee__list--science" class="committee__list">
-            <div class="committee__row">
-              <div class="committee__header"></div>
-              <strong class="committee__title">
-                <a href="javascript:showCommittee('AST')">Assembly Science, Innovation and Technology Committee</a>
-              </strong>
-              <strong class="committee__subtitle">Democratic Aides</strong>
+            </div>
+            <div class="committee__subtitle">OLS Aide</div>
+            <div class="committee__text">
+              <a href="javascript:repEmail_BH_ASM('AOF')">Nicolas Soto</a>, <a href="tel:+1-609-847-3890">609-847-3890</a>   
+            </div>
+         </div>
+        </div>
+        <!-- Assembly Science Committee -->     
+        <div id="a__science" class="committee__list">
+          <div class="committee__row">
+            <div class="committee__header">
+              <a href="javascript:showCommittee('AST')">Assembly Science, Innovation and Technology Committee</a>
+            </div>
+            <div class="committee__subtitle">Democratic Aides</div>
+            <div class="committee__text"> 
               Catherine Tung, <a href="tel:+1-609-847-3500">609-847-3500</a><br>
               Andrew McAllister, <a href="tel:+1-609-847-3500">609-847-3500</a>
-              <strong class="committee__subtitle">Republican Aides</strong>
+            </div>
+            <div class="committee__subtitle">Republican Aides</div>
+            <div class="committee__text"> 
               Kevin Logan, <a href="tel:+1-609-847-3400">609-847-3400</a><br>
               Thea Sheridan, <a href="tel:+1-609-847-3400">609-847-3400</a>
-              <strong class="committee__subtitle">OLS Aide</strong>
-              <a href="javascript:repEmail_BH_ASM('AST')">Tara Howley</a>,
-              <a href="tel:+1-609-847-3840">609-847-3840</a>   
-            </div><!-- /.committee__row -->
+            </div>
+            <div class="committee__subtitle">OLS Aide</div>
+            <div class="committee__text">
+              <a href="javascript:repEmail_BH_ASM('AST')">Tara Howley</a>, <a href="tel:+1-609-847-3840">609-847-3840</a>   
+            </div>
           </div>
-        </div> 
-        <!-- /.committee__lists -->     
-        <div id="committee__lists" class="committeeClosed">
-          <div id="committee__list--senior" class="committee__list">
-            <div class="committee__row">
-              <div class="committee__header"></div>
-              <strong class="committee__title">
-                <a href="javascript:showCommittee('ASE')">Assembly Aging and Senior Services Committee</a>
-              </strong>
-              <strong class="committee__subtitle">Democratic Aides</strong>
+        </div>
+        <!-- Assembly Aging Committee -->     
+        <div id="a__senior" class="committee__list">
+          <div class="committee__row">
+            <div class="committee__header">
+              <a href="javascript:showCommittee('ASE')">Assembly Aging and Senior Services Committee</a>
+            </div>
+            <div class="committee__subtitle">Democratic Aides</div>
+            <div class="committee__text"> 
               Jade Bechelli, <a href="tel:+1-609-847-3500">609-847-3500</a><br>
               Ian McLaughlin, <a href="tel:+1-609-847-3500">609-847-3500</a>
-              <strong class="committee__subtitle">Republican Aides</strong>
+            </div>
+            <div class="committee__subtitle">Republican Aides</div>
+            <div class="committee__text"> 
               Kevin Logan, <a href="tel:+1-609-847-3400">609-847-3400</a><br>
               Thea Sheridan, <a href="tel:+1-609-847-3400">609-847-3400</a>
-              <strong class="committee__subtitle">OLS Aide</strong>
-              <a href="javascript:repEmail_BH_ASM('ASE')">Sarah M. Schmidt</a>,
-              <a href="tel:+1-609-847-3860">609-847-3860</a>   
-            </div><!-- /.committee__row -->
+            </div>
+            <div class="committee__subtitle">OLS Aide</div>
+            <div class="committee__text">
+              <a href="javascript:repEmail_BH_ASM('ASE')">Sarah M. Schmidt</a>, <a href="tel:+1-609-847-3860">609-847-3860</a>   
+            </div>
           </div>
-        </div> 
-        <!-- /.committee__lists -->     
-        <div id="committee__lists" class="committeeClosed">
-          <div id="committee__list--infrastructure" class="committee__list">
-            <div class="committee__row">
-              <div class="committee__header"></div>
-              <strong class="committee__title">
-                <a href="javascript:showCommittee('ANR')">Assembly Special Committee on Infrastructure and Natural Resources Committee</a>
-              </strong>
-              <strong class="committee__subtitle">Democratic Aides</strong>
+        </div>
+        <!-- Assembly Infrastructure Committee -->     
+        <div id="a__infrastructure" class="committee__list">
+          <div class="committee__row">
+            <div class="committee__header">
+              <a href="javascript:showCommittee('ANR')">Assembly Special Committee on Infrastructure and Natural Resources Committee</a>
+            </div>
+            <div class="committee__subtitle">Democratic Aides</div>
+            <div class="committee__text"> 
               Catherine Tung, <a href="tel:+1-609-847-3500">609-847-3500</a><br>
               Andrew McAllister, <a href="tel:+1-609-847-3500">609-847-3500</a>
-              <strong class="committee__subtitle">Republican Aides</strong>
+            </div>
+            <div class="committee__subtitle">Republican Aides</div>
+            <div class="committee__text"> 
               Kevin Logan, <a href="tel:+1-609-847-3400">609-847-3400</a><br>
               Thea Sheridan, <a href="tel:+1-609-847-3400">609-847-3400</a>
-              <strong class="committee__subtitle">OLS Aide</strong>
-              <a href="javascript:repEmail_BH_ASM('ANR')">Adaline B. Kaser</a>,
-              <a href="tel:+1-609-847-3855">609-847-3855</a>   
-            </div><!-- /.committee__row -->
+            </div>
+            <div class="committee__subtitle">OLS Aide</div>
+            <div class="committee__text">
+              <a href="javascript:repEmail_BH_ASM('ANR')">Adaline B. Kaser</a>, <a href="tel:+1-609-847-3855">609-847-3855</a>   
+            </div>
           </div>
-        </div> 
-        <!-- /.committee__lists -->     
-        <div id="committee__lists" class="committeeClosed">
-          <div id="govt" class="committee__list">
-            <div class="committee__row">
-              <div class="committee__header"></div>
-              <strong class="committee__title">
-                <a href="javascript:showCommittee('ASL')">Assembly State and Local Government Committee</a>
-              </strong>
-              <strong class="committee__subtitle">Democratic Aide</strong>
+        </div>
+        <!-- Assembly Govt Committee -->     
+        <div id="a__govt" class="committee__list">
+          <div class="committee__row">
+            <div class="committee__header">
+              <a href="javascript:showCommittee('ASL')">Assembly State and Local Government Committee</a>
+            </div>
+            <div class="committee__subtitle">Democratic Aide</div>
+            <div class="committee__text"> 
               Kristin Powell, <a href="tel:+1-609-847-3500">609-847-3500</a>
-              <strong class="committee__subtitle">Republican Aides</strong>
+            </div>
+            <div class="committee__subtitle">Republican Aides</div>
+            <div class="committee__text"> 
               Kevin Logan, <a href="tel:+1-609-847-3400">609-847-3400</a><br>
               Thea Sheridan, <a href="tel:+1-609-847-3400">609-847-3400</a>
-              <strong class="committee__subtitle">OLS Aides</strong>
-              <a href="javascript:repEmail_BH_ASM('ASL')">Cindy Lombardi Hespe</a>,
-              <a href="tel:+1-609-847-3875">609-847-3875</a><br>
-              <a href="javascript:repEmail_BH_ASM('ASL')">Roshard Williams</a>,
-              <a href="tel:+1-609-847-3890">609-847-3890</a>   
-            </div><!-- /.committee__row -->
+            </div>
+            <div class="committee__subtitle">OLS Aides</div>
+            <div class="committee__text">
+              <a href="javascript:repEmail_BH_ASM('ASL')">Cindy Lombardi Hespe</a>, <a href="tel:+1-609-847-3875">609-847-3875</a><br>
+              <a href="javascript:repEmail_BH_ASM('ASL')">Roshard Williams</a>, <a href="tel:+1-609-847-3890">609-847-3890</a>   
+            </div>
           </div>
-        </div> 
-        <!-- /.committee__lists -->     
-        <div id="committee__lists" class="committeeClosed">
-          <div id="telecomm" class="committee__list">
-            <div class="committee__row">
-              <div class="committee__header"></div>
-              <strong class="committee__title">
-                <a href="javascript:showCommittee('ATU')">Assembly Telecommunications and Utilities Committee</a>
-              </strong>
-              <strong class="committee__subtitle">Democratic Aide</strong>
+        </div>
+        <!-- Assembly Telecommunications Committee -->     
+        <div id="a__telecomm" class="committee__list">
+          <div class="committee__row">
+            <div class="committee__header">
+              <a href="javascript:showCommittee('ATU')">Assembly Telecommunications and Utilities Committee</a>
+            </div>
+            <div class="committee__subtitle">Democratic Aide</div>
+            <div class="committee__text"> 
               Andrew McAllister, <a href="tel:+1-609-847-3500">609-847-3500</a>
-              <strong class="committee__subtitle">Republican Aides</strong>
+            </div>
+            <div class="committee__subtitle">Republican Aides</div>
+            <div class="committee__text"> 
               Kevin Logan, <a href="tel:+1-609-847-3400">609-847-3400</a><br>
               Thea Sheridan, <a href="tel:+1-609-847-3400">609-847-3400</a>
-              <strong class="committee__subtitle">OLS Aide</strong>
-              <a href="javascript:repEmail_BH_ASM('ATU')">Kevin J. Donahue</a>,
-              <a href="tel:+1-609-847-3840">609-847-3840</a>   
-            </div><!-- /.committee__row -->
+            </div>
+            <div class="committee__subtitle">OLS Aide</div>
+            <div class="committee__text">
+              <a href="javascript:repEmail_BH_ASM('ATU')">Kevin J. Donahue</a>, <a href="tel:+1-609-847-3840">609-847-3840</a>   
+            </div>
           </div>
-        </div>       
-        <!-- /.committee__lists -->     
-        <div id="committee__lists" class="committeeClosed">
-          <div id="tourism" class="committee__list">
-            <div class="committee__row">
-              <div class="committee__header"></div>
-              <strong class="committee__title">
-                <a href="javascript:showCommittee('ATG')">Assembly Tourism, Gaming and the Arts Committee</a>
-              </strong>
-              <strong class="committee__subtitle">Democratic Aide</strong>
+        </div>      
+        <!-- Assembly Tourism Committee -->     
+        <div id="a__tourism" class="committee__list">
+          <div class="committee__row">
+            <div class="committee__header">
+              <a href="javascript:showCommittee('ATG')">Assembly Tourism, Gaming and the Arts Committee</a>
+            </div>
+            <div class="committee__subtitle">Democratic Aide</div>
+            <div class="committee__text"> 
               Sam Aloi, <a href="tel:+1-609-847-3500">609-847-3500</a>
-              <strong class="committee__subtitle">Republican Aides</strong>
+            </div>
+            <div class="committee__subtitle">Republican Aides</div>
+            <div class="committee__text"> 
               Kevin Logan, <a href="tel:+1-609-847-3400">609-847-3400</a><br>
               Thea Sheridan, <a href="tel:+1-609-847-3400">609-847-3400</a>
-              <strong class="committee__subtitle">OLS Aide</strong>
-              <a href="javascript:repEmail_BH_ASM('ATG')">Nicolas Soto</a>,
-              <a href="tel:+1-609-847-3890">609-847-3890</a>   
-            </div><!-- /.committee__row -->
-          </div>
-        </div>       
-        <!-- /.committee__lists -->     
-        <div id="committee__lists" class="committeeClosed">
-          <div id="transportation" class="committee__list">
-            <div class="committee__row">
-              <div class="committee__header"></div>
-              <strong class="committee__title">
-                <a href="javascript:showCommittee('ATR')">Assembly Transportation and Independent Authorities Committee</a>
-              </strong>
-              <strong class="committee__subtitle">Democratic Aide</strong>
+            </div>
+            <div class="committee__subtitle">OLS Aide</div>
+            <div class="committee__text">
+              <a href="javascript:repEmail_BH_ASM('ATG')">Nicolas Soto</a>, <a href="tel:+1-609-847-3890">609-847-3890</a>   
+            </div>
+         </div>
+        </div>
+        <!-- Assembly Transportation Committee -->     
+        <div id="a__transportation" class="committee__list">
+          <div class="committee__row">
+            <div class="committee__header">
+              <a href="javascript:showCommittee('ATR')">Assembly Transportation and Independent Authorities Committee</a>
+            </div>
+            <div class="committee__subtitle">Democratic Aide</div>
+            <div class="committee__text"> 
               Shannon Natale, <a href="tel:+1-609-847-3500">609-847-3500</a>
-              <strong class="committee__subtitle">Republican Aides</strong>
+            </div>
+            <div class="committee__subtitle">Republican Aides</div>
+            <div class="committee__text"> 
               Kevin Logan, <a href="tel:+1-609-847-3400">609-847-3400</a><br>
               Thea Sheridan, <a href="tel:+1-609-847-3400">609-847-3400</a>
-              <strong class="committee__subtitle">OLS Aides</strong>
-              <a href="javascript:repEmail_BH_ASM('ATR')">Philip M. Mersinger</a>,
-              <a href="tel:+1-609-847-3840">609-847-3840</a><br>
-              <a href="javascript:repEmail_BH_ASM('ATR')">Patrick Brennan</a>,
-              <a href="tel:+1-609-847-3840">609-847-3840</a>   
-            </div><!-- /.committee__row -->
-          </div>
+            </div>
+            <div class="committee__subtitle">OLS Aides</div>
+            <div class="committee__text">
+              <a href="javascript:repEmail_BH_ASM('ATR')">Philip M. Mersinger</a>, <a href="tel:+1-609-847-3840">609-847-3840</a><br>
+              <a href="javascript:repEmail_BH_ASM('ATR')">Patrick Brennan</a>, <a href="tel:+1-609-847-3840">609-847-3840</a>   
+            </div>
+         </div>
         </div>
-        <!-- /.committee__lists -->     
-        <div id="committee__lists" class="committeeClosed">
-          <div id="women" class="committee__list">
-            <div class="committee__row">
-              <div class="committee__header"></div>
-              <strong class="committee__title">
-                <a href="javascript:showCommittee('AWC')">Assembly Women and Children Committee</a>
-              </strong>
-              <strong class="committee__subtitle">Democratic Aide</strong>
+        <!-- Assembly Women Committee -->             
+        <div id="a__women" class="committee__list">
+          <div class="committee__row">
+            <div class="committee__header">
+              <a href="javascript:showCommittee('AWC')">Assembly Women and Children Committee</a>
+            </div>
+            <div class="committee__subtitle">Democratic Aide</div>
+            <div class="committee__text"> 
               Anita Ouedraogo, <a href="tel:+1-609-847-3500">609-847-3500</a>
-              <strong class="committee__subtitle">Republican Aides</strong>
+            </div>
+            <div class="committee__subtitle">Republican Aides</div>
+            <div class="committee__text"> 
               Kevin Logan, <a href="tel:+1-609-847-3400">609-847-3400</a><br>
               Thea Sheridan, <a href="tel:+1-609-847-3400">609-847-3400</a>
-              <strong class="committee__subtitle">OLS Aides</strong>
-              <a href="javascript:repEmail_BH_ASM('AWC')">Michele Leblanc</a>,
-              <a href="tel:+1-609-847-3860">609-847-3860</a><br>
-              <a href="javascript:repEmail_BH_ASM('AWC')">Anne Cappabianca</a>,
-              <a href="tel:+1-609-847-3860">609-847-3860</a>   
-            </div><!-- /.committee__row -->
+            </div>
+            <div class="committee__subtitle">OLS Aides</div>
+            <div class="committee__text">
+              <a href="javascript:repEmail_BH_ASM('AWC')">Michele Leblanc</a>, <a href="tel:+1-609-847-3860">609-847-3860</a><br>
+              <a href="javascript:repEmail_BH_ASM('AWC')">Anne Cappabianca</a>, <a href="tel:+1-609-847-3860">609-847-3860</a>   
+            </div>
           </div>
         </div>
- 
-        <select id="assemblyCommittee" name="assemblyCommittee" >
-          <option selected="">Select a Committee</option>
-          <option value="agriculture">Agriculture</option>
-          <option value="appropriations">Appropriations</option>
-          <option value="budget">Budget</option>
-          <option value="commerce">Commerce</option>
-          <option value="women">Women and Children</option>
-       </select>
+
+      </div> <!--/.assembly-->
+         
+        <div id="senate" class="senate">
+          <!-- committee dropdown-->
+          <h4 class="committeeAides__subTitle--center">
+            <label>Select a Senate Committee:</h4>
+            <select id="senateCommittee" name="senateCommittee" class="committee__select">
+              <option selected="">Select a Committee</option>
+              <option value="s__budget">Budget and Appropriations</option>
+              <option value="s__commerce">Commerce</option>
+              <option value="s__community">Community and Urban Affairs</option>
+              <option value="s__economic">Economic Growth</option>
+              <option value="s__education">Education</option>
+              <option value="s__environment">Environment and Energy</option>
+              <option value="s__health">Health, Human Services and Senior Citizens</option>
+              <option value="s__higher">Higher Education</option>
+              <option value="s__judiciary">Judiciary</option>
+              <option value="s__labor">Labor</option>
+              <option value="s__law">Law and Public Safety</option>
+              <option value="s__legislative">Legislative Oversight</option>
+              <option value="s__military">Military and Veterans’ Affairs</option>
+              <option value="s__rules">Rules and Order</option>
+              <option value="s__state">State Government, Wagering, Tourism and Historic Preservation</option>
+              <option value="s__transportation">Transportation and Independent Authorities</option>
+            </select>
+          </label>
+  
+          <!-- Senate Budget Committee -->
+          <div id="s__budget" class="committee__list">
+            <div class="committee__row">
+              <div class="committee__header">
+                <a href="javascript:showCommittee('SBA')">Senate Budget and Appropriations Committee</a>
+              </div>
+              <div class="committee__subtitle">Democratic Aides</div>
+              <div class="committee__text"> 
+                Luke Wolff, <a href="tel:+1-609-847-3700">609-847-3700</a><br>
+                Elizabeth Mahn, <a href="tel:+1-609-847-3700">609-847-3700</a>
+              </div>
+              <div class="committee__subtitle">Republican Aide</div>
+              <div class="committee__text"> 
+                Tom Neff, <a href="tel:+1-609-847-3600">609-847-3600</a>
+              </div>
+              <div class="committee__subtitle">OLS Aides</div>
+              <div class="committee__text">
+                <a href="javascript:repEmail_BH_SEN('SBA')">Joseph Pezzulo</a>, <a href="tel:+1-609-847-3835">609-847-3835</a><br>
+                <a href="javascript:repEmail_BH_SEN('SBA')">Parag Shende</a>, <a href="tel:+1-609-847-3835">609-847-3835</a><br>   
+                <a href="javascript:repEmail_BH_SEN('SBA')">Christine Dobisch</a>, <a href="tel:+1-609-847-3835">609-847-3835 </a>              
+              </div>
+            </div>
+          </div>
+          <!-- Senate Commerce Committee -->
+          <div id="s__commerce" class="committee__list">
+            <div class="committee__row">
+              <div class="committee__header">
+                <a href="javascript:showCommittee('SCM')">Senate Commerce Committee</a>
+              </div>
+              <div class="committee__subtitle">Democratic Aide</div>
+              <div class="committee__text"> 
+                Kate Millsaps, <a href="tel:+1-609-847-3700">609-847-3700</a>
+              </div>
+              <div class="committee__subtitle">Republican Aide</div>
+              <div class="committee__text"> 
+                Laurine Purola, <a href="tel:+1-609-847-3600">609-847-3600</a>
+              </div>
+              <div class="committee__subtitle">OLS Aides</div>
+              <div class="committee__text">
+                <a href="javascript:repEmail_BH_SEN('SCM')">Christian H. Weisenbacher</a>, <a href="tel:+1-609-847-3845">609-847-3845</a><br>
+                <a href="javascript:repEmail_BH_SEN('SCM')">Liza Ackerman</a>, <a href="tel:+1-609-847-3845">609-847-3845</a>
+              </div>
+            </div>
+          </div>           
+          <!-- Senate Community Committee -->
+          <div id="s__community" class="committee__list">
+            <div class="committee__row">
+              <div class="committee__header">
+                <a href="javascript:showCommittee('SCU')">Senate Community and Urban Affairs Committee</a>
+              </div>
+              <div class="committee__subtitle">Democratic Aide</div>
+              <div class="committee__text"> 
+                Alea Couch, <a href="tel:+1-609-847-3700">609-847-3700</a>
+              </div>
+              <div class="committee__subtitle">Republican Aide</div>
+              <div class="committee__text"> 
+                Sarah Fletcher, <a href="tel:+1-609-847-3600">609-847-3600</a>
+              </div>
+              <div class="committee__subtitle">OLS Aides</div>
+              <div class="committee__text">
+                <a href="javascript:repEmail_BH_SEN('SCU')">Benjamin Levy</a>, <a href="tel:+1-609-847-3875">609-847-3875</a><br>
+                <a href="javascript:repEmail_BH_SEN('SCU')">Joel Chapman</a>, <a href="tel:+1-609-847-3875">609-847-3875</a>
+              </div>
+            </div>
+          </div>
+          <!-- Senate Economic Committee -->
+          <div id="s__economic" class="committee__list">
+            <div class="committee__row">
+              <div class="committee__header">
+                <a href="javascript:showCommittee('SEG')">Senate Economic Growth Committee</a>
+              </div>
+              <div class="committee__subtitle">Democratic Aide</div>
+              <div class="committee__text"> 
+                Erika Nava, <a href="tel:+1-609-847-3700">609-847-3700</a>
+              </div>
+              <div class="committee__subtitle">Republican Aide</div>
+              <div class="committee__text"> 
+                Laurine Purola, <a href="tel:+1-609-847-3600">609-847-3600</a>
+              </div>
+              <div class="committee__subtitle">OLS Aides</div>
+              <div class="committee__text">
+                <a href="javascript:repEmail_BH_SEN('SEG')">Patrick Brennan</a>, <a href="tel:+1-609-847-3840">609-847-3840</a><br>
+                <a href="javascript:repEmail_BH_SEN('SEG')">Amanda DeMarco</a>, <a href="tel:+1-609-847-3840">609-847-3840</a>
+              </div>
+            </div>
+          </div>          
+          <!-- Senate Education Committee -->
+          <div id="s__education" class="committee__list">
+            <div class="committee__row">
+              <div class="committee__header">
+                <a href="javascript:showCommittee('SED')">Senate Education Committee</a>
+              </div>
+              <div class="committee__subtitle">Democratic Aide</div>
+              <div class="committee__text"> 
+                Elizabeth Mahn, <a href="tel:+1-609-847-3700">609-847-3700</a>
+              </div>
+              <div class="committee__subtitle">Republican Aide</div>
+              <div class="committee__text"> 
+                Rebecca Panitch, <a href="tel:+1-609-847-3600">609-847-3600</a>
+              </div>
+              <div class="committee__subtitle">OLS Aide</div>
+              <div class="committee__text">
+                <a href="javascript:repEmail_BH_SEN('SED')">Lauren E. Lefevre</a>, <a href="tel:+1-609-847-3850">609-847-3850</a>
+              </div>
+            </div>
+          </div>          
+          <!-- Senate Environment Committee -->
+          <div id="s__environment" class="committee__list">
+            <div class="committee__row">
+              <div class="committee__header">
+                <a href="javascript:showCommittee('SEN')">Senate Environment and Energy Committee</a>
+              </div>
+              <div class="committee__subtitle">Democratic Aide</div>
+              <div class="committee__text"> 
+                Kevil Duhon, <a href="tel:+1-609-847-3700">609-847-3700</a>
+              </div>
+              <div class="committee__subtitle">Republican Aide</div>
+              <div class="committee__text"> 
+                Rebecca Panitch, <a href="tel:+1-609-847-3600">609-847-3600</a>
+              </div>
+              <div class="committee__subtitle">OLS Aides</div>
+              <div class="committee__text">
+                <a href="javascript:repEmail_BH_SEN('SEN')">Eric Hansen</a>, <a href="tel:+1-609-847-3855">609-847-3855</a><br>
+                <a href="javascript:repEmail_BH_SEN('SEN')">Christina Denney</a>, <a href="tel:+1-609-847-3855">609-847-3855</a>
+              </div>
+            </div>
+          </div>          
+          <!-- Senate Health, Human Services and Aging Committee -->
+          <div id="s__health" class="committee__list">
+            <div class="committee__row">
+              <div class="committee__header">
+                <a href="javascript:showCommittee('SHH')">Senate Health, Human Services and Senior Citizens Committee</a>
+              </div>
+              <div class="committee__subtitle">Democratic Aide</div>
+              <div class="committee__text"> 
+                Amanda Melillo, <a href="tel:+1-609-847-3700">609-847-3700</a>
+              </div>
+              <div class="committee__subtitle">Republican Aide</div>
+              <div class="committee__text"> 
+                John Gorman, <a href="tel:+1-609-847-3600">609-847-3600</a>
+              </div>
+              <div class="committee__subtitle">OLS Aides</div>
+              <div class="committee__text">
+                <a href="javascript:repEmail_BH_SEN('SHH')">Michael D. Fahncke</a>, <a href="tel:+1-609-847-3860">609-847-3860</a><br>
+                <a href="javascript:repEmail_BH_SEN('SHH')">Justin Lucero</a>, <a href="tel:+1-609-847-3860">609-847-3860</a>
+              </div>
+            </div>
+          </div>
+          <!-- Senate Higher Education Committee -->
+          <div id="s__higher" class="committee__list">
+            <div class="committee__row">
+              <div class="committee__header">
+                <a href="javascript:showCommittee('SHI')">Senate Higher Education Committee</a>
+              </div>
+              <div class="committee__subtitle">Democratic Aide</div>
+              <div class="committee__text"> 
+                Kate Millsaps, <a href="tel:+1-609-847-3700">609-847-3700</a>
+              </div>
+              <div class="committee__subtitle">Republican Aide</div>
+              <div class="committee__text"> 
+                Alex Solomon, <a href="tel:+1-609-847-3600">609-847-3600</a>
+              </div>
+              <div class="committee__subtitle">OLS Aide</div>
+              <div class="committee__text">
+                <a href="javascript:repEmail_BH_SEN('SHI')">Sarah Haimowitz</a>, <a href="tel:+1-609-847-3850">609-847-3850</a>
+              </div>
+            </div>
+          </div>
+          <!-- Senate Judiciary Committee -->
+          <div id="s__judiciary" class="committee__list">
+            <div class="committee__row">
+              <div class="committee__header">
+                <a href="javascript:showCommittee('SJU')">Senate Judiciary Committee</a>
+              </div>
+              <div class="committee__subtitle">Democratic Aide</div>
+              <div class="committee__text"> 
+                Alison Accettola, <a href="tel:+1-609-847-3700">609-847-3700</a>
+              </div>
+              <div class="committee__subtitle">Republican Aide</div>
+              <div class="committee__text"> 
+                Michael Molimock, <a href="tel:+1-609-847-3600">609-847-3600</a>
+              </div>
+              <div class="committee__subtitle">OLS Aide</div>
+              <div class="committee__text">
+                <a href="javascript:repEmail_BH_SEN('SJU')">David J. Lorette</a>, <a href="tel:+1-609-847-3901">609-847-3901</a>
+              </div>
+            </div>
+          </div>          
+          <!-- Senate Labor Committee -->
+          <div id="s__labor" class="committee__list">
+            <div class="committee__row">
+              <div class="committee__header">
+                <a href="javascript:showCommittee('SLA')">Senate Labor Committee</a>
+              </div>
+              <div class="committee__subtitle">Democratic Aide</div>
+              <div class="committee__text"> 
+                Daniel Ward, <a href="tel:+1-609-847-3700">609-847-3700</a>
+              </div>
+              <div class="committee__subtitle">Republican Aide</div>
+              <div class="committee__text"> 
+                Alex Solomon, <a href="tel:+1-609-847-3600">609-847-3600</a>
+              </div>
+              <div class="committee__subtitle">OLS Aides</div>
+              <div class="committee__text">
+                <a href="javascript:repEmail_BH_SEN('SLA')">Gregory L. Williams</a>, <a href="tel:+1-609-847-3845">609-847-3845</a><br>
+                <a href="javascript:repEmail_BH_SEN('SLA')">Tyler L. Wolanin</a>, <a href="tel:+1-609-847-3845">609-847-3845</a>
+              </div>
+            </div>
+          </div>          
+          <!-- Senate Law Committee -->
+          <div id="s__law" class="committee__list">
+            <div class="committee__row">
+              <div class="committee__header">
+                <a href="javascript:showCommittee('SLP')">Senate Law and Public Safety Committee</a>
+              </div>
+              <div class="committee__subtitle">Democratic Aide</div>
+              <div class="committee__text"> 
+                Alison Accettola, <a href="tel:+1-609-847-3700">609-847-3700</a>
+              </div>
+              <div class="committee__subtitle">Republican Aide</div>
+              <div class="committee__text"> 
+                Sarah Fletcher, <a href="tel:+1-609-847-3600">609-847-3600</a>
+              </div>
+              <div class="committee__subtitle">OLS Aides</div>
+              <div class="committee__text">
+                <a href="javascript:repEmail_BH_SEN('SLP')">Wendy S. Whitbeck</a>, <a href="tel:+1-609-847-3870">609-847-3870</a><br>
+                <a href="javascript:repEmail_BH_SEN('SLP')">Amanda D. Holland</a>, <a href="tel:+1-609-847-3870">609-847-3870</a>
+              </div>
+            </div>
+          </div>          
+          <!-- Senate Legislative Oversight Committee -->
+          <div id="s__legislative" class="committee__list">
+            <div class="committee__row">
+              <div class="committee__header">
+                <a href="javascript:showCommittee('SLO')">Senate Legislative Oversight Committee</a>
+              </div>
+              <div class="committee__subtitle">Democratic Aide</div>
+              <div class="committee__text"> 
+                Mark Magyar, <a href="tel:+1-609-847-3700">609-847-3700</a>
+              </div>
+              <div class="committee__subtitle">Republican Aide</div>
+              <div class="committee__text"> 
+                John Gorman, <a href="tel:+1-609-847-3600">609-847-3600</a>
+              </div>
+              <div class="committee__subtitle">OLS Aide</div>
+              <div class="committee__text">
+                <a href="javascript:repEmail_BH_SEN('SLO')">Neha Mehta Patel</a>, <a href="tel:+1-609-847-3855">609-847-3855</a>
+              </div>
+            </div>
+          </div>          
+          <!-- Senate Military Committee -->
+          <div id="s__military" class="committee__list">
+            <div class="committee__row">
+              <div class="committee__header">
+                <a href="javascript:showCommittee('SMV')">Senate Military and Veterans’ Affairs Committee</a>
+              </div>
+              <div class="committee__subtitle">Democratic Aide</div>
+              <div class="committee__text"> 
+                Alea Couch, <a href="tel:+1-609-847-3700">609-847-3700</a>
+              </div>
+              <div class="committee__subtitle">Republican Aide</div>
+              <div class="committee__text"> 
+                Alex Solomon, <a href="tel:+1-609-847-3600">609-847-3600</a>
+              </div>
+              <div class="committee__subtitle">OLS Aide</div>
+              <div class="committee__text">
+                <a href="javascript:repEmail_BH_SEN('SMV')">Tracey F. Pino Murphy</a>, <a href="tel:+1-609-847-3890">609-847-3890</a>
+              </div>
+            </div>
+          </div>          
+          <!-- Senate Rules Committee -->
+          <div id="s__rules" class="committee__list">
+            <div class="committee__row">
+              <div class="committee__header">
+                <a href="javascript:showCommittee('SRUL')">Senate Rules and Order Committee</a>
+              </div>
+              <div class="committee__subtitle">Democratic Aide</div>
+              <div class="committee__text"> 
+                TBA, <a href="tel:+1-609-847-3700">609-847-3700</a>
+              </div>
+              <div class="committee__subtitle">Republican Aide</div>
+              <div class="committee__text"> 
+                TBA, <a href="tel:+1-609-847-3600">609-847-3600</a>
+              </div>
+              <div class="committee__subtitle">OLS Aide</div>
+              <div class="committee__text">
+                <a href="javascript:repEmail_BH_SEN('SRUL')">Jason M. Krajewski</a>, <a href="tel:+1-609-847-3901">609-847-3901</a>
+              </div>
+            </div>
+          </div>                    
+          <!-- Senate State Govt Committee -->
+          <div id="s__state" class="committee__list">
+            <div class="committee__row">
+              <div class="committee__header">
+                <a href="javascript:showCommittee('SSG')">Senate State Government, Wagering, Tourism and Historic Preservation Committee</a>
+              </div>
+              <div class="committee__subtitle">Democratic Aide</div>
+              <div class="committee__text"> 
+                Daniel Ward, <a href="tel:+1-609-847-3700">609-847-3700</a>
+              </div>
+              <div class="committee__subtitle">Republican Aide</div>
+              <div class="committee__text"> 
+                Theodore Conrad, <a href="tel:+1-609-847-3600">609-847-3600</a>
+              </div>
+              <div class="committee__subtitle">OLS Aide</div>
+              <div class="committee__text">
+                <a href="javascript:repEmail_BH_SEN('SSG')">Raysa Martinez Kruger</a>, <a href="tel:+1-609-847-3890">609-847-3890</a>
+              </div>
+            </div>
+          </div>  
+          <!-- Senate Transportation Committee -->
+          <div id="s__transportation" class="committee__list">
+            <div class="committee__row">
+              <div class="committee__header">
+                <a href="javascript:showCommittee('STR')">Senate Transportation Committee</a>
+              </div>
+              <div class="committee__subtitle">Democratic Aide</div>
+              <div class="committee__text"> 
+                Erika Nava, <a href="tel:+1-609-847-3700">609-847-3700</a>
+              </div>
+              <div class="committee__subtitle">Republican Aide</div>
+              <div class="committee__text"> 
+                Theodore Conrad, <a href="tel:+1-609-847-3600">609-847-3600</a>
+              </div>
+              <div class="committee__subtitle">OLS Aide</div>
+              <div class="committee__text">
+                <a href="javascript:repEmail_BH_SEN('STR')">Sheree D. Henderson</a>, <a href="tel:+1-609-847-3840">609-847-3840</a><br>
+                <a href="javascript:repEmail_BH_SEN('STR')">Lauren Stutz</a>, <a href="tel:+1-609-847-3840">609-847-3840</a>
+              </div>
+            </div>
+          </div>                              
+        </div><!--/.senate-->
         
       </section>
       <!-- /.faqs -->
@@ -1114,6 +1570,9 @@
       <input type="hidden" id="commiteeCode" name="commiteeCode" />
     </form>
     <form id="asmEmail" name="asmEmail" action="email-com-aide.html?A" method="Post">
+      <input type="hidden" id="commiteeCode" name="commiteeCode" />
+    </form>
+    <form id="senEmail" name="senEmail" action="email-com-aide.html?S" method="Post">
       <input type="hidden" id="commiteeCode" name="commiteeCode" />
     </form>
 
